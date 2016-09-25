@@ -8,7 +8,7 @@ int buttonState = 0;         // variable for reading the pushbutton status
 // Die setup-Funktion wird einmalig nach "reset" oder power-up" ausgeführt 
 void setup()
 {   
-  // Initialisiert den PB1-Pin als Ausgang, der Asugang steuert die LED
+  // Initialisiert den Pin2 als Ausgang, der Asugang steuert die LED
   pinMode(2, OUTPUT); 
   pinMode(12, INPUT); 
 
