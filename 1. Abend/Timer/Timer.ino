@@ -48,7 +48,7 @@ void init_timer1()
 void init_timer1()
 {
   Timer1.setChannel1Mode(TIMER_OUTPUTCOMPARE);
-  Timer1.setPeriod(1000000); // Periodendauer in Millisekunden
+  Timer1.setPeriod(1000000); // Periodendauer in Mikrosekunden
   Timer1.setCompare1(1);
   Timer1.attachCompare1Interrupt(timer_funktion);
   Timer1.resume();
