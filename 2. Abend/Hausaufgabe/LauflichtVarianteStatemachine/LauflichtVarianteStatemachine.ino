@@ -110,26 +110,26 @@ void loop()
     // switch führt jeweils einen Zustand (case) des ledZustandes aus
     switch(ledZustand)
     {
-      case ZUSTAND_START:
-        ledZustand = ZUSTAND_LED1;
+      case 10:
+        ledZustand = 20;
         digitalWrite(9, HIGH);
         break;
-      case ZUSTAND_LED1:
-        ledZustand = ZUSTAND_LED2;
+      case 20:
         digitalWrite(9, LOW);  
         digitalWrite(10, HIGH);  
+        ledZustand = 30;
         break;        
-      case ZUSTAND_LED2:
+      case 30:
         ledZustand = ZUSTAND_LED3;
         digitalWrite(10, LOW);  
         digitalWrite(11, HIGH);  
         break;        
-      case ZUSTAND_LED3:
+      case 40:
         ledZustand = ZUSTAND_LED4;
         digitalWrite(11, LOW);  
         digitalWrite(12, HIGH);  
         break;        
-      case ZUSTAND_LED4:
+      case 50:
         ledZustand = ZUSTAND_LED1;
         digitalWrite(9, HIGH);  
         digitalWrite(12, LOW);  

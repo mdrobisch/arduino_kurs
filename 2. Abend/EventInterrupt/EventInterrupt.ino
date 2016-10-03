@@ -2,13 +2,19 @@
  * Extra Schaltung: Interrupt mit Pulldown
 */
 int helligkeit = 1;
+int entprellen = 0;
 
 void interruptFunction() 
 {
+
+  if(entprellen == 0)
+  {
     helligkeit++;
 
     if(helligkeit > 3)  // ist die Helligkeit bereits auf Maximum (5) stezen wir die Helligkeit auf 0
       helligkeit = 0;
+    entprellen = 3;
+  }
 }
 
 // Die setup-Funktion wird einmalig nach "reset" oder power-up" ausgeführt 
@@ -30,11 +36,15 @@ void setup()
 // Die loop-Funktion wird ständig wiederholt durchlaufen
 void loop() 
 {   
-
   if(helligkeit > 0)      // Schaltet die LED nur ein, wenn die helligkeit > 0 ist
-    digitalWrite(12, HIGH); // Schaltet die LED ein (HIGH ist der Schaltzustand/Spannunglevel)  
-  
+  {
+     digitalWrite(12, HIGH); // Schaltet die LED ein (HIGH ist der Schaltzustand/Spannunglevel)  
+  }  
   delay(helligkeit*1);      // Warte (delay) 1000ms = 1 Sekunde 
   digitalWrite(12, LOW);    // Schaltet die LED aus (LOW Schaltzustand/Spannungslevel)
-  delay(20);                // Warte 1 Sekunde
+  delay(20);                // Warte 20 Milli-Sekunde
+  if(entprellen > 0)
+  {
+    entprellen = entprellen - 1;
+  }
 }

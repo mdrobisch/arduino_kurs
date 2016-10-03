@@ -26,7 +26,7 @@ void loop()
   if(helligkeit > 0)      // Schaltet die LED nur ein, wenn die helligkeit > 0 ist
     digitalWrite(12, HIGH); // Schaltet die LED ein (HIGH ist der Schaltzustand/Spannunglevel)  
   
-  delay(helligkeit*1);      // Warte (delay) 1000ms = 1 Sekunde 
+  delay(helligkeit*1);      // 
   digitalWrite(12, LOW);    // Schaltet die LED aus (LOW Schaltzustand/Spannungslevel)
   delay(20);                // Warte 1 Sekunde
 

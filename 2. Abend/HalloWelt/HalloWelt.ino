@@ -12,7 +12,7 @@ void interruptFunction()
 void setup()
 {   
   // Initialisiert den Pin 2 als Ausgang, der den Status des Tasters überwacht  
-  pinMode(2,INPUT_PULLUP);
+  pinMode(2,INPUT_PULLDOWN);
   // Zum Verknüpfen der Interrupts wird die attachInterrupt Funktion verwendet
   // Dabei ist der erste Parameter die Interrupt-Nummer
   // Für STM32Duino gilt: Die Interrupt-Nummer ist gleich der Pinnummer
