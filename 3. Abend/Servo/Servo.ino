@@ -25,12 +25,12 @@ void setup()
 // Die loop-Funktion wird ständig wiederholt durchlaufen
 void loop()
 {
-  // Ausgangsposition anfahren (Wert von 0 bis 180°)
+  // Ausgangsposition anfahren (Wert von 0 bis 180 Grad)
     servo.write(0);
     delay(500);
   
     for (int stellung = 0 ; stellung <= 180; stellung += 10) {
-      // Schreibt die Stellung in den PWM-Pin (Wert von 0 bis 180°):
+      // Schreibt die Stellung in den PWM-Pin (Wert von 0 bis 180 Grad):
       servo.write(stellung);
       // Warten bis zur nächsten Änderung der Stellung
       delay(500);
@@ -38,7 +38,7 @@ void loop()
     }  
 
     for (int stellung = 180 ; stellung >= 0; stellung -= 10) {
-      // Schreibt die Stellung in den PWM-Pin (Wert von 0 bis 180°):
+      // Schreibt die Stellung in den PWM-Pin (Wert von 0 bis 180 Grad):
       servo.write(stellung);
       // Warten bis zur nächsten Änderung der Stellung
       delay(500);
