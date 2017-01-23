@@ -28,7 +28,7 @@ void loop()
   
   delay(helligkeit*1);      // 
   digitalWrite(12, LOW);    // Schaltet die LED aus (LOW Schaltzustand/Spannungslevel)
-  delay(20);                // Warte 1 Sekunde
+  delay(20);                // Warte  1 Milisekunde
 
   if(buttonOldState == LOW)   // ein verändern der Helligkeit ist nur gewünscht, wenn der Zustand des Tasters vorher LOW war
   {

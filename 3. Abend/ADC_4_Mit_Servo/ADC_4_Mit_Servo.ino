@@ -1,6 +1,11 @@
 /* 
  * Mit dem ADC Spannungen messen
 */
+#include <Servo.h>
+
+Servo servo;
+int servoPin = 7;
+
 
 // buttonEvent zeigt ein zu bearbeitendes Taster-Ereignis (zu bearbeitenden Interrupt) an
 int buttonEvent = 0;
@@ -39,14 +44,13 @@ void setup()
 
   
     // Initialisierung der seriellen Schnittstelle (UART) mit einer BAUD-Rate von 9600(Bits pro Sekunde)  
-    Serial1.begin(115200);
+    Serial1.begin(9600);
     // Ausgabe eines Begrüßungstextes
     delay(500);
     Serial1.println("Hallo Welt");
+
+    servo.attach(servoPin);
   
-    // Initialisierung des A0-Analog-Eingang
-  // Muss nur für den STM32 ausgeführt werden, deshalb hier auskommentiert
-    // pinMode(A0, INPUT_ANALOG); 
 } 
 // Die loop-Funktion wird ständig wiederholt durchlaufen
 void loop()
@@ -62,13 +66,14 @@ void loop()
     // Auslesen der Spannung am A0-Pin für X 
     sensorWertX = analogRead(A0);
     // Zuweisung/Aufspreizung des analogen Wertes von 0 .. 1023 auf einem Wert von 0 .. 65535
-    ausgabeWertX = map(sensorWertX, 0, 4095, 0, 1000);  
+    ausgabeWertX = map(sensorWertX, 0, 4095, 0, 180);  
     // Ausgabe des Rohwertes und des berechneten/transformierten Wertes über die serielle Schnittstelle
     Serial1.print("Rohwert= " );
     Serial1.print(sensorWertX);
     Serial1.print(" Ausgabe= ");
     Serial1.println(ausgabeWertX);
 
+    servo.write(ausgabeWertX);
     delay(100); // warten bis zum nächsten Aufruf
   
   

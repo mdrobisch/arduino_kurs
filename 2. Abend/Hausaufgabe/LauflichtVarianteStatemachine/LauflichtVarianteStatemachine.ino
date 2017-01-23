@@ -76,8 +76,11 @@ void init_timer1()
 // Die setup-Funktion wird einmalig nach "reset" oder power-up" ausgeführt 
 void setup()
 {   
-  // Initialisiert den Pin 2 als Ausgang, der Ausgang steuert die LED
-  pinMode(2, OUTPUT); 
+  // Initialisiert den Pin 9,10,11,12 als Ausgang, die Ausgänge steuern die LEDs
+  pinMode(9, OUTPUT); 
+  pinMode(10, OUTPUT); 
+  pinMode(11, OUTPUT); 
+  pinMode(12, OUTPUT); 
 
   // Konfiguration des Timers  
   // der Quellcode sieht in der Simulation anders aus, da wir das STM-Board verwenden
@@ -88,7 +91,12 @@ void setup()
 // Die loop-Funktion wird ständig wiederholt durchlaufen
 void loop() 
 { 
-  // der Zustandsautomat kann ständig durchlaufen werden
+
+  // Es können mehrere Zustandautomaten für unterschiedliche Aufgaben hintereinander bearbeitet werden
+  // hier wird ein kontinuierlicher Zustandsautomat und ein eeventgesteuerter Zustandsautomat realisiert
+
+  
+  // Der kontinuierliche Zustandsautomat wird ständig durchlaufen (in jedem Durchlauf / loop)
   switch(ledZustand)
   {
       case ZUSTAND_START:
@@ -102,7 +110,7 @@ void loop()
           // alle anderen Zustände werden Ereignissgetsuert behandelt
           break;
   }
-
+  
   // ... oder Ereignisgestuert angestoßen werden
   // d.h. nur einmal falls das Ereignis autritt
   if(timerEreignis == 1)
@@ -110,29 +118,31 @@ void loop()
     // switch führt jeweils einen Zustand (case) des ledZustandes aus
     switch(ledZustand)
     {
-      case 10:
-        ledZustand = 20;
+      case ZUSTAND_LED1:
         digitalWrite(9, HIGH);
+        digitalWrite(11, HIGH);  
+        digitalWrite(10, HIGH);  
+        digitalWrite(12, LOW); 
+        ledZustand = ZUSTAND_LED2; // der neue Zustand ist nun ZUSTAND_LED2
         break;
-      case 20:
+      case ZUSTAND_LED2:
         digitalWrite(9, LOW);  
         digitalWrite(10, HIGH);  
-        ledZustand = 30;
+        ledZustand = ZUSTAND_LED3; // der neue Zustand ist nun ZUSTAND_LED3
         break;        
-      case 30:
-        ledZustand = ZUSTAND_LED3;
+      case ZUSTAND_LED3:
         digitalWrite(10, LOW);  
         digitalWrite(11, HIGH);  
+        ledZustand = ZUSTAND_LED4; // der neue Zustand ist nun ZUSTAND_LED4
         break;        
-      case 40:
-        ledZustand = ZUSTAND_LED4;
+      case ZUSTAND_LED4:
         digitalWrite(11, LOW);  
-        digitalWrite(12, HIGH);  
+        digitalWrite(12, HIGH);
+        ledZustand = ZUSTAND_LED1; // der neue Zustand ist nun ZUSTAND_LED1
         break;        
-      case 50:
+      default: // Was machen wir für alle anderen Zustände (default)?
+        // Fehlerabfang
         ledZustand = ZUSTAND_LED1;
-        digitalWrite(9, HIGH);  
-        digitalWrite(12, LOW);  
         break;        
     }
     // zurücksetzen des Ereignisses
@@ -145,5 +155,7 @@ void loop()
 
 void timer_funktion(void) 
 {
+  // wird wollen so kur wie möglich in den timer (interrupt)-Funktionen bleiben
+  // deshalb setzen wir nur das Event
   timerEreignis = 1;
 }
