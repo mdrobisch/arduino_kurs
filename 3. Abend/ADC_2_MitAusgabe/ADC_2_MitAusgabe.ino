@@ -21,7 +21,9 @@ void setup()
   
     // Initialisierung des A0-Analog-Eingang
     // Muss nur für den STM32 ausgeführt werden, deshalb hier auskommentiert
-    pinMode(A0, INPUT_ANALOG); 
+    // Teilweise funktioniert der ADC auch ohne konkrete initialisierung
+    // hier bleibt er deshalb auskommentiert
+    // pinMode(A0, INPUT_ANALOG); 
 } 
 // Die loop-Funktion wird ständig wiederholt durchlaufen
 void loop()

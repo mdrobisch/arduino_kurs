@@ -36,8 +36,6 @@ void setup()
     // für andere ADC-Pins wird der pinMode auf INPUT_ANALOG gesetzt
     // pinMode(A0, INPUT_ANALOG); // set up pin for analog input
 
-
-  
     // Initialisierung der seriellen Schnittstelle (UART) mit einer BAUD-Rate von 9600(Bits pro Sekunde)  
     Serial1.begin(115200);
     // Ausgabe eines Begrüßungstextes

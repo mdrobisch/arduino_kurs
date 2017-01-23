@@ -39,7 +39,7 @@ void setup()
     // diese kann für die Pins A0 ... A5 weggelassen werden
     // die STM32Duino Board verfügen aber meist über deutlich mehr ADC-Eingänge
     // für andere ADC-Pins wird der pinMode auf INPUT_ANALOG gesetzt
-    // pinMode(A0, INPUT_ANALOG); // set up pin for analog input
+    // pinMode(A0, INPUT_ANALOG); // setzen des Pins als Analoger Eingang (ADC)
 
 
   
