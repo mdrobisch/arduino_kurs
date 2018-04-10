@@ -1,0 +1,895 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrartcl
+\begin_preamble
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{pdflscape}
+\usepackage[dvipsnames]{xcolor}
+\geometry{
+   left=2cm,
+   right=2cm,
+   marginparwidth=2cm}
+
+\definecolor{MyBlue}{rgb}{0.1,0.1,1}
+%\renewcommand{\footfontsize}{\small} 
+% Seitenstil
+%\usepackage[headsepline, % Trennlinie unter Kopfzeile
+%#  ]{scrlayer-scrpage}
+%\clearpairofpagestyles% Leeren von Kopf- und Fußzeile
+%\ihead{Kolumnentitel}
+%\ohead{\pagemark}
+%\addtokomafont{pagenumber}{\sffamily} % Anpassen der Schriftart der Seitenzahl
+%\setkomafont{pagehead}{\normalfont\sffamily}  % Setzen der Schriftart für Kopfzeile
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Header and Footer of all pages
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+Arduino für Künstler & Bastler
+\end_layout
+
+\begin_layout Right Header
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagemark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+
+\size scriptsize
+Marcus Drobisch, Konglomerat e.V., Dresden, Germany, 2016 
+\begin_inset Newline newline
+\end_inset
+
+Licence under Creative Commons CC-by-nc-sa 
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+
+\begin_inset Graphics
+	filename images/CC-symbols.png
+	height 0.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/FabLabDD.png
+	width 1cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/Konglomerat_eV.png
+	width 1cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Titelseite
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "50pheight%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/ArduinoKurs_Cover.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Hinweise & Vorbereitungen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Hinweise zum Kurs
+\end_layout
+
+\begin_layout Standard
+Hier zunächst ein paar Hinweise zum Kurs:
+\end_layout
+
+\begin_layout Itemize
+Jeder Teilnehmer benötigt einen eigenen PC.
+ Aufgrund des Platzangebots im Rosenwerk sind Laptops oder Tablets vorzuziehen,
+ die die Teilnehmer selbst mitbringen.
+ Nach Absprache können 1 bis 2 PCs gestellt werden.
+ Bitte meldet dies vor Beginn des Kurses dem Kursleiter.
+\end_layout
+
+\begin_layout Itemize
+Um Problemen beim Einrichten vorzubeugen, sollte jeder Teilnehmer vor Kursbeginn
+ die Arduino Software auf dem eigenen Laptop / Tablet installieren.
+ Dieser Vorgang benötigt kein Detailwissen und ist innerhalb von 10 Minuten
+ erledigt.
+ Eine Anleitung hierfür befindet sich im nächsten Kapitel.
+ Bitte lest die Anleitung zunächst vollständig durch und startet erst danach
+ die Installation.
+ Bei Problemen oder Fragen kann gern der Kursleiter kontaktiert werden.
+\end_layout
+
+\begin_layout Itemize
+Jeder Teilnehmer bekommt eines der unten abgebildeten Kits.
+ Es beinhaltet alle benötigten Hardwarekomponenten und Kabel.
+ Es ist kein Löten notwendig.
+ Das Kit kann im Zeitraum des Kurses mit nach Hause genommen werden, muss
+ jedoch nach Beendigung des Kurses wieder abgegeben werden.
+ Eine Ausleihe darüber hinaus ist nach Absprache möglich.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/arduino_kit.jpg
+	lyxscale 50
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Essen und Trinken ist während des gesamten Kurszeitraums erlaubt.
+ Es wird zusätzlich eine längere Pause eingeplant.
+ Freut euch auf Kaffee, Mate und Kekse.
+ Bitte achtet aber stehts auf das richtige Zusammenspiel von Getränken und
+ Elektronik/Laptops.
+\end_layout
+
+\begin_layout Itemize
+Der Kurs ist so konzipiert, dass keine Vorkenntnisse notwendig sind.
+ Eventuell werden Kursteilnehmer mit Erfahrung in der Programmierung hier
+ etwas ausgebremst.
+ Für die weitere Auseinandersetzung mit dem Thema sind Übungsaufgaben geplant.
+ Diese können freiwillig zwischen Kursterminen bearbeitet werden.
+ Hilfestellungen, Kontrolle und Tipps erfolgen per eMail.
+\end_layout
+
+\begin_layout Itemize
+Es wird ein Handout ausgegeben.
+ Zunächst als PDF, am Kursende in Papierform.
+ Alle wichtigen Informationen sind hier zusammengefasst, sodass der Kurs
+ ohne Abschreibübungen auskommt.
+ Es empfiehlt sich dennoch die ein oder andere Notiz bzw.
+ Ergänzung.
+\end_layout
+
+\begin_layout Itemize
+Bitte Arbeitet den Kurs nicht in der Freizeit vor.
+ Die Aufgaben der folgenden Abende sollten nur während der Kursabende bearbeitet
+ werden.
+ 
+\end_layout
+
+\begin_layout Itemize
+Die Zusammenarbeit und Austausch mit den anderen Kursteilnehmer ist explizit
+ gewünscht.
+ Besonders in den Zeiträumen der eigenständigen Arbeit und des Schaltungsaufbaus.
+ Helft euch untereinander.
+ Natürlich gilt: Alles Freiwillig, kein Muss.
+\end_layout
+
+\begin_layout Itemize
+Bei Fragen und Unklarheiten während, vor und nach dem Kurs, einfach Fragen.
+ Während des Vortrags, bitte ich um Meldung mit Handzeichen.
+\end_layout
+
+\begin_layout Itemize
+Die Gesundheit der Teilnehmer und ihrer Technok ist mir sehr wichtig, bitte
+ seit Vorsichtig beim Umgang mit den Kits und den anderen Teilnehmern.
+ 
+\end_layout
+
+\begin_layout Itemize
+Sollte mal etwas kaputt gehen oder im Kit fehlen, meldet dies bitte sofort.
+ Es ist Ersatz vorhanden.
+ Jeder freut sich über ein vollständiges, funktionsfähiges Kit.
+\end_layout
+
+\begin_layout Itemize
+Der Kurs ist in meiner Freizeit entstanden.
+ Ich habe keinen Lektor und bin pädagogisch nicht ausgebildet.
+ Ich habe an der Universität Übungen geleitet und Nachhilfe gegeben.
+ Bei Problemen mit Rechtschreibfehlern und mit der Kursführung bitte ich
+ dies zu berücksichtigen.
+ Ich bin für Verbesserungen offen und werde jederzeit versuchen diese einzuarbei
+ten.
+ Dabei steht für mich die Zielgruppe (Anfänger) und Nutzbarkeit des Wissens
+ vor Expertentipps, Optimierungen, Hintergrundwissen und Vollständigkeit.
+ 
+\end_layout
+
+\begin_layout Itemize
+Habt Spaß.
+\end_layout
+
+\begin_layout Section*
+Software einrichten
+\end_layout
+
+\begin_layout Standard
+Die sogenannten Arduino IDE (Integrated development enviroment / Integrierte
+ Entwicklungsumgebung) ist der Namensgeber des Kurses.
+ Sie wird uns während der Abende wesentlich bei der Programmierung unterstützen.
+ Sie übernimmt im Hintergrund die nötige Verwaltung und Kommandos zur Übersetzun
+g der Programmiersprache in die Maschinensprache.
+ Dieser Vorgang (
+\begin_inset Quotes gld
+\end_inset
+
+Kompilierung
+\begin_inset Quotes grd
+\end_inset
+
+) besteht aus vielen Kommandozeilen-Befehlen, Programmen und Skripten die
+ im Hintergrund ablaufen.
+ Der übersetzte Maschiencode kann anschließend mit der IDE in die entsprechenden
+ Hardware geladen werden (
+\begin_inset Quotes gld
+\end_inset
+
+Flashen
+\begin_inset Quotes grd
+\end_inset
+
+.
+ ) Zusätzlich bietet die Software zahlreiche Werkzeuge zum vereinfachen
+ des Programmierprozesses auf die wir später im Kurs bei ihrer Benutzung
+ eingehen werden.
+\end_layout
+
+\begin_layout Standard
+Die Arduino IDE ist eine Open Source Anwendung und kann unter 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.arduino.cc/en/Main/OldSoftwareReleases#previous
+\end_layout
+
+\end_inset
+
+ kosfenfrei für Linux, Mac und Windows heruntergeladen werden.
+ Für den Kurs wird aus Gründen der Kompatibilität und des einheitlichen
+ Aussehens die Verwendung der Version 1.6.9 (unter 
+\begin_inset Quotes gld
+\end_inset
+
+Old Releases
+\begin_inset Quotes grd
+\end_inset
+
+) empfohlen.
+ Die Installationsprozess sollte selbsterklärend sein (Standardinstallation).
+\end_layout
+
+\begin_layout Standard
+Im Anschluss öffnet bitte die Arduino IDE und geht auf "Werkzeuge -> Board
+ ....
+ -> Boardverwalter" ( bzw.
+ in Englisch "Tools -> Board ...
+ -> Boardmanager").
+ Hier installiert ihr das Paket "Arduino SAMD Boards (32-bits ARM Cortex-M0+)
+ by Arduino (Arduino/Genuino Zero)
+\begin_inset Quotes grd
+\end_inset
+
+ installieren.
+ Nach anklicken erscheint hier die Schaltflähe zur Installation.
+ Voreingestellt sollte die neueste Version 1.6.6 installiert werden.
+ Hier werden im Hintergrund die richtigen Übersetzer für die Mikrocontroller
+ nachgeladen.
+\end_layout
+
+\begin_layout Standard
+Da wir im Kurs das Nucleo-Board von STM anstelle der klassischen Arduino-Hardwar
+e einsetzen werden, müssen wir nun noch das Addon STM32Duino für die Arduino-IDE
+ installieren.
+ Dieses Plugin erweitert die Umgebung, sodass diese Mikrocontroller/Boards
+ ebenfalls angesprochen und programmiert werden können.
+ Hierzu muss folgende gepackte Datei von 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip
+\end_layout
+
+\end_inset
+
+ heruntergeladen werden.
+ Anschließend ist der Inhalt je nach Betriebssystem in einen der folgenden
+ Ordner zu entpacken:
+\end_layout
+
+\begin_layout Itemize
+Unter Windows: 
+\begin_inset Quotes gld
+\end_inset
+
+Dokumente/Arduino/hardware
+\begin_inset Quotes grd
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(englische Ssysteme 
+\begin_inset Quotes gld
+\end_inset
+
+My Documents/Arduino/hardware
+\begin_inset Quotes grd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Unter MacOS: ~/Documents/Arduino/hardware/ .
+ Zusätzlich müssen die Rechte für die COM-Schnittstelle freigegeben werden.
+\end_layout
+
+\begin_layout Itemize
+Unter Linux: In den 
+\begin_inset Quotes gld
+\end_inset
+
+hardware
+\begin_inset Quotes grd
+\end_inset
+
+-Ordner deiner Arduino-Installation (
+\begin_inset Quotes gld
+\end_inset
+
+Sketches
+\begin_inset Quotes grd
+\end_inset
+
+-Ordner).
+ Führe anschließend das Skript 
+\begin_inset Quotes gld
+\end_inset
+
+tools/linux/install.sh
+\begin_inset Quotes grd
+\end_inset
+
+ aus.
+ Zusätzlich müssen die Rechte für die COM-Schnittstelle (ttyACM) freigegeben
+ werden.
+\end_layout
+
+\begin_layout Standard
+Für MacOS und Linux sind zusätzlich noch weitere Schritte notwendig die
+ ihr unter https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Installation
+ nachlesen könnt.
+ Nach erfolgreicher Installation der IDE und der Erweiterung sollte die
+ Arduino IDE nach dem Start wie folgt (siehe Bild) aussehen.
+ Im Menüpunkt 
+\begin_inset Quotes gld
+\end_inset
+
+Werkzeuge->Board ...
+ -> 
+\begin_inset Quotes grd
+\end_inset
+
+ wird nun das 
+\begin_inset Quotes gld
+\end_inset
+
+STM Nucleo F103RB
+\begin_inset Quotes grd
+\end_inset
+
+ aufgelistet.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Arduino_IDE_nach_Instal.png
+	lyxscale 25
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arduino 1.6.9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Abschließend kann die Installation überprüft werden indem ein 
+\begin_inset Quotes gld
+\end_inset
+
+leeres
+\begin_inset Quotes grd
+\end_inset
+
+ Projekt in Maschinensprache übersetzt wird.
+ Dazu in der Arduino-IDE 
+\begin_inset Quotes gld
+\end_inset
+
+Datei -> Neu
+\begin_inset Quotes grd
+\end_inset
+
+ Ausführen und prüfen, ob unter 
+\begin_inset Quotes gld
+\end_inset
+
+Werkzeuge -> Board
+\begin_inset Quotes grd
+\end_inset
+
+ und 
+\begin_inset Quotes gld
+\end_inset
+
+Werkzeuge -> Processor
+\begin_inset Quotes grd
+\end_inset
+
+ die richtigen Einstellungen vorgenommen sind.
+ Ein 
+\begin_inset Quotes gld
+\end_inset
+
+Sketch -> Überprüfen / Kompilieren
+\begin_inset Quotes grd
+\end_inset
+
+ sollte mit folgender Ausgabe in der Konsole erfolgreich durchlaufen.
+ Anderfalls sollten zunächst die bisherigen Schritte überprüft werden.
+ Sollte dei Einrichtung weiterhin nicht funktionieren kann gern auch der
+ Kursleiter kotaktiert werden.
+ In entsprechenden Suchmaschinen, findet man zusätzlich meist Lösungen für
+ einzelne Probleme entsprechend der Ausgabe in der Konsole.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Workspaces/ArduinoKurs/Handout/images/Arduino_Install_Check.png
+	lyxscale 25
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arduino-IDE-Check"
+
+\end_inset
+
+Ausgabe bei erfolgreicher Einrichtung
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Circuits.io
+\end_layout
+
+\begin_layout Standard
+CircuitIO ist ein Simulationswerkzeug für den Arduino.
+ Es ist in der Standardversion kostenfrei.
+ Die Nutzung erfolgt Web-bassiert.
+ D.h.
+ zur Nutzung ist eine Registrierung und Internetverbindung erforderlich.
+ Im Kurs wird besonders für die Vorführung und Erklärung der Funktionsweise
+ von Programmen und Schaltungen CircuitIO eingesetzt.
+ Auch während der eigenen Arbeit lohnt sich die Verwendung.
+ So können Fehler bereits vorher erkannt, Hardwareaufbauten korrigiert und
+ komplexe Programme getestet (Debugging) werden.
+ Besonders die bereitgestellten Beispiele machen den Simulator zu einem
+ einsteigerfreundlichen und mächtigen Helfer.
+ Für Teilnehmer ist die Verwendung freiwillig.
+ Die kostenlose Registrierung mit der persönlichen eMail-Adresse kann unter
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://circuits.io/
+\end_layout
+
+\end_inset
+
+ erfolgen.
+ Die im Kurs verwendeten Schaltungen sind unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://circuits.io/users/763753/designs
+\end_layout
+
+\end_inset
+
+ zu finden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Screenshot_CircuitsIO.png
+	lyxscale 25
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CircuitsIO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Einstieg und Auffrischung in die Programmierung:
+\end_layout
+
+\begin_layout Standard
+Während de Kurses wird wenig auf die verwendete Programmiersprache C/C++
+ eingegangen.
+ Zum Einstieg oder Auffrischung der Programmierkenntnisse empfehle ich,
+ die für Kinder gedachte Einführung 
+\begin_inset Quotes gld
+\end_inset
+
+Hour of Code
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Besonders die Reihe Blockly-Games ( 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://blockly-games.appspot.com/
+\end_layout
+
+\end_inset
+
+ ) ist eine geeignete Möglichkeit die grundlegenden Programmierkenntnisse
+ zu erwerben.
+ Hierfür solten die die Teile von links nach rechts durchgearbeitet werden.
+ Die Reihe ist für JavaScript gedacht, kann aber 1 zu 1 für die C/C++-Programmie
+rung übernommen werden.
+ Auf unterschiede wir im Kurs eingegangen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Blockly.png
+	lyxscale 25
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CircuitsIO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Note Note
+status open
+
+\begin_layout Section*
+Appear.In
+\end_layout
+
+\begin_layout Plain Layout
+Zum Teilen des Bildschirm während des Kurses benutzen wir die Seite Appear.In.
+ Der Channel für den Kurs ist 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://appear.in/arduino
+\end_layout
+
+\end_inset
+
+.
+ Für den Kurs ist keine Regstrierung notwendig.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Github.com
+\end_layout
+
+\begin_layout Standard
+Die Quellcodes die im Kurs verwendet werden findet ihr unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/mdrobisch/arduino_kurs
+\end_layout
+
+\end_inset
+
+ .
+ Für den Kurs ist keine Regstrierung notwendig.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,5536 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrartcl
+\begin_preamble
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{pdflscape}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}2
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+  {\&}{{\&}}1
+}
+\geometry{
+   left=2cm,
+   right=1cm,
+   marginparwidth=2cm}
+
+\definecolor{MyBlue}{rgb}{0.1,0.1,1}
+%\renewcommand{\footfontsize}{\small} 
+% Seitenstil
+%\usepackage[headsepline, % Trennlinie unter Kopfzeile
+%#  ]{scrlayer-scrpage}
+%\clearpairofpagestyles% Leeren von Kopf- und Fußzeile
+%\ihead{Kolumnentitel}
+%\ohead{\pagemark}
+%\addtokomafont{pagenumber}{\sffamily} % Anpassen der Schriftart der Seitenzahl
+%\setkomafont{pagehead}{\normalfont\sffamily}  % Setzen der Schriftart für Kopfzeile
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\rightmargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Header and Footer of all pages
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+Arduino für Künstler & Bastler
+\end_layout
+
+\begin_layout Right Header
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagemark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+
+\size scriptsize
+Marcus Drobisch, Konglomerat e.V., Dresden, Germany, 2016 
+\begin_inset Newline newline
+\end_inset
+
+Licence under Creative Commons CC-by-nc-sa 
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+
+\begin_inset Graphics
+	filename images/CC-symbols.png
+	height 0.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/FabLabDD.png
+	width 1cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/Konglomerat_eV.png
+	width 1cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Titelseite
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "50pheight%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/ArduinoKurs_Cover.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Workshop-Unterlagen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Inhaltsverezichnis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Inhalt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Übersicht
+\end_layout
+
+\begin_layout Section
+Einleitung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Absatz zu den Möglichkeiten mit Mikrocontroller für Bastler und Künstler
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Arduino ist eine der beliebtesten Mikrocontroller-Plattformen.
+ Durch die einfache Handhabung und den zahlreichen Möglichkeiten ist es
+ besonders unter Künstlern und Bastlern weit verbreitet.
+ Viele Projekte die sich früher eher umständlich und aufwändig realisieren
+ liesen sind mit einem Arduino deutlich einfacher umzusetzen.
+ Dies gilt besonders für den Nachbau.
+ So lassen sich täglich neue Projekte zum Nachbau oder als Anregung in Foren,
+ Blogs und Portalen finden.
+ Um auch euch diese spannende Welt der Mikrocontroller näher zu bringen
+ soll euch in diesem Kurs die Grundlagen an praktischen Beispielen vermitteln
+ werden.
+ Diese Unterlagen werden Kurs begleiten.
+ Alle wichtigen Informationen sind hier zusammengefasst, sodass der Kurs
+ ohne Abschreibübungen auskommt.
+ Es empfehlen sich dennoch die ein oder andere Notiz bzw.
+ Ergänzung zu den Folien und Quellcodes.
+ Die Folien zu den Kursen werden auf Anfrage gern auch als Datei herausgegeben.
+ Später können euch die Unterlagen als Nachschlagewerk in euren Projekten
+ zur Seite stehen.
+\end_layout
+
+\begin_layout Standard
+Ziel des Workshops ist ein möglichst praktischer Einstieg.
+ Der Kurs ist daher an konkreten Beispielen aufgebaut.
+ Diese behandeln die wichtigsten Elemente, die für eigene Projekte und das
+ verständnis größerer Nachbauprojekte wichtig sind.
+ Zusätzlich wird an den Beispielen die Programmiersprache und konkrektes
+ Hardwarewissen zum Mikrocontroller erklärt.
+ Die Präsentationen und die vorherige Simulation sollen dies zusätzlich
+ unterstützen und werden von den Aufbau der Schaltungen begleitet.
+ Später können die Beispiele als Sammlung funktionierender Bausteine verwendet
+ werden um den Anfang eigener Lösungen zu vereinfachen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/arduino_chaos.jpg
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Spannende Arduino-Projekte gibt es überall im Netz.
+ Quelle: https://creative-chaos.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Der Kurs sollte daher auch als Einstieg verstanden werden.
+ In den 3 Abenden kann allerdings nur ein grober Umriss erfolgen.
+ Das aktiv Gelernte sowie die Unterlagen werden später als solide Grundlage
+ für ein Aknüpfen oder einen Wiedereinsteig legen.
+ Besonders der Anhang ist als Lektüre und Kompendium lesenwert.
+ Dieser wird auch in der Zukunft ausgebaut und weiterhin an alle Teilnehmer
+ verteilt.
+ Sinnvoll ist das gelernte später an eigenen Projekten zu festigen.
+ Gute Programmierung und Stil kommen aus Erfahrung.
+ Dazu kann besonders auch das Studium von Programmen anderer helfen.
+ Im Generellen heißt es hier am Ball zu bleiben und den Spaß am Programmieren
+ nicht zu verlieren.
+ Um seinen Kenntnisstand zu testen wurden die den Workshop Übungen eingebaut.
+ Sie sind zur weiteren Festigung gedacht und umfassen theoretische wie auch
+ praktische Aufgaben.
+ Das Lösen dieser ist freiwillig und kann zum Beispiel im Anschluss an die
+ Abende erfolgen.
+ Generell ist eine weitere Beschäfftigung zwischen den Abendenen mit der
+ Thematik sinnvoll.
+ Die Mikrocontroller-Sets können in der Woche mit nach Hause genommen werden.
+ Für ein einheitliches Niveau im Kurs und gegen Langeweile empfehle ich
+ jedoch explizit, nicht vorzuarbeiten.
+ Das bezieht sich auf die Aufgaben, die im Kurs durchgearbeitet werden.
+ Sie sind so konzipiert, dass sie auch in der Abendveranstaltung schaffbar
+ sind.
+ 
+\end_layout
+
+\begin_layout Standard
+Abschließend ein paar letzte Informationen zum Kursleiter.
+ Ich bin '85 geboren.
+ Habe an der TU Dresden Elektrotechnik studiert.
+ Diesen habe ich 2012 mit der Vertiefung Feinwerk und Mikrotechnik abgeschlossen
+ und arbeite nun als leitender Entwickler bei einer Messtechnik-Firma aus
+ Dresden.
+ Hier entwickle ich sowohl die Elektronik als auch die Mikrocontroller-Programmi
+erung (Firmware).
+ Im Kurs werden die gleichen Vorgehensweise, Strukturen und Muster verwendet,
+ wie ich sie in der täglichen Arbeit einsetze.
+ Die aufkommende Wichtigkeit von Mikrocontrollern und den Spaß mit diesen
+ darf ich daher täglich aufs neue erleben.
+\end_layout
+
+\begin_layout Section
+Grundlagen 
+\end_layout
+
+\begin_layout Subsection
+Arduino
+\end_layout
+
+\begin_layout Standard
+Mikrocontroller wie der von Arduino verwendete ATmega328 verstecken sich
+ in vielen Produkten des alttäglichen Lebens von der Kaffeemaschine bishin
+ zum Satelitten steuern und automatisieren sie überall Geräte und Maschinen
+ und machen diese zu den 
+\begin_inset Quotes gld
+\end_inset
+
+intelligenten
+\begin_inset Quotes grd
+\end_inset
+
+ Systemen wie wir Sie kennen.
+ Dabei ist vielen diese Allgegenwertigkeit nicht bewusst, geschweige denn
+ das die Funktionsweise und die Arbeit mit ihnen verstanden werden kann.
+ Einer der Gründe hierfür ist das Mikrocontroller vor den 90er Jahren noch
+ einer kleinen Zahl Entwicklern und Hobbyelektronikern vorbehalten.
+ Die benötigten Programmiergeräte, die Software und Boards waren schlichtweg
+ zu teuer oder mussten umständlich selbst gebaut werden.
+ Zusätzlich war auch die Programmierung z.B.
+ in Assembler und C in komplexen Entwicklungsumgebungen zu unverständlich.
+ Ende der 90er Jahre änderte sich dies mit einhergehenen Verfall von Elektronik
+ und Computerpreisen.
+ Zusätzlich änderte sich bei vielen Firmen die Philosophie hin zu einem
+ niederschwelligen Einstieg.
+ Microchip und Atmel mit ihren Mikrocontroller waren hier 2 der ersten Vorreiter.
+ So bot Atmel zusätzlich zu ihren günstigen Mikrocontroller eine freie Entwicklu
+ngsung.
+ Auch die Hardware kontte für unter 20€ gebaut oder gekauft werden.
+ Nicht viel später interessierte sich auch die Open Source Bewegung für
+ die Boards und entwickelte freie Open Source Varianten der Entwicklungsumgebung
+en und Programmiergeräte.
+ Die Popularität der AVR-Mikrocontroller von Atmel führte bald zu einer
+ Dominanz in der Bastlerszene.
+ Doch die Entwicklung mit Mikrocontroller war immernoch einer relativ kleinen
+ Gruppe vorbehalten.
+ Der Einstieg vornehmlich nun meist in C stellte weiterhin eine große Hürde
+ da.
+ Die Entwicklungsumgebungen (von Entwicklern für Entwickler konzipiert)
+ waren riesig und erschlugen viele Einsteiger mit der schieren Anzahl von
+ Funktionen und Möglichkeiten.
+ Dies änderte sich mit dem erscheinen der Arduino-Umgebung.
+ .....
+ Mit der aufkommenden, teils eng mit Arduino verbundenen Makerbewegung wächst
+ die Anzahl von Projekten und die dazugehörige Community noch immer.
+ Da die Projekte meist gut dokumentiert und mit ihrem vollständigen Quellcode
+ auf Blogs, auf Guthub gestellt werden, stellen sie für Anfänger eine gute
+ Referenz dar.
+ Hier können Ideen gesammelt, Projekte kombiniert und Zusammenarbeit koordiniert
+ werden.
+ Für nahezu jeden Bereich gibt es solche Beispiele zum Ansteuern von Schaltkreis
+en, Displays, Motoren und ganzen Geräten.
+ Hinzu kommt die auf Arduino ausgerichtete Beschaffbarkeit von Modulen die
+ direkt für die Arduino-Boards ausgelegt wurden und im Internet als auch
+ in Fachgeschäften erwroben werden können.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/old_atmel_eval_board.jpg
+	lyxscale 25
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Altes Atmel-Evaluation-Board Quelle: http://docplayer.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dies sind neben der einfachen Beschaffung, und des relativ moderaten Preises
+ einige der Hauptgründe warum auch für diesen Kurs das Arduino-Framework
+ ausgewählt wurde.
+ Dies bezieht sich hierbei jedoch nur auf die Software und die Tools von
+ Arduino.
+ Die Hardwareseite, also die konkrete Elektronik und der Mikrocontroller
+ selbst muss hier abgegrenzt betrachtet werden.
+ Sie ist beim Arduino-Framework (Tools+Software) nicht zwangsläufig auf
+ einen Mikrocontroller beschränkt.
+ Im Arduino Uno kommt so z.B.
+ ein 8-bit Mikrocontroller von AVR zum Einsatz.
+ Im Arduino Due hingegen ein ARM basierter SAM90.
+ Im Kurs soll wiederum ein Arduino-Kompatibler STM32F103 zum Einsatz kommen.
+ Die Gründe für die Wahl eines Mikrocontrollers ohne Arduino-Logo werden
+ im Kapitel Hardware näher beleuchtet.
+ Auf die Arbeit mit anderen Mikrocontroller-Familien und Entwicklungsumgebungen
+ wird darüber hinaus im Ausblick zu professionellen Arbeiten eingegangen.
+ Spätestens hier wird die Wahl des STM32F103 ersichtlich werdeb.
+ 
+\end_layout
+
+\begin_layout Subsection
+Hardware
+\end_layout
+
+\begin_layout Standard
+Arduino wurde ursprünglich für den Einsatz mit AVR-Mikrcontrollern von Atmel
+ entwickelt.
+ Diese hatten bereits vor Arduino eine sehr umfangreiche kostenlose Entwicklungs
+umgebung für die Programmierung mit Assembler und C.
+ Atmel war einer der Vorreiter als er dies den Entwicklern anbot, in einer
+ Zeit in der für Workstations und Programmiergeräte tausende Euro ausgegeben
+ werden musste.
+ 
+\end_layout
+
+\begin_layout Standard
+In den ersten Arduinos 2005 waren Atmega8 AVR-Mikrocontroller verbaut.
+ Die nächsten Boards bauten auf den Weiterentwicklungen dieses Mikrocontrollers
+ auf.
+ Hier kamen mit Atmeg168, Atmega328 bishin zum Atmega2560 weitere Mikrocontrolle
+r der gleichen 8bit-Familie zum Einsatz.
+ Diese sind bis heute die weit verbreitetsten Board der Arduino Familie.
+ Doch was ist ein Mikrocontroller überhaupt? Ein Mikrocontroller ist ein
+ Rechner, der durch eine Programmierung beliebige Berechnungen ausführen
+ kann.
+ Hier unterscheidet er sich nicht von einem herkömmlichen PC.
+ Ebenso wie ein PC hat er sogenannte Pins (Schnittstellen) über die er mit
+ der Außenwelt in Verbindung treten kann.
+ Dabei zeichnen sich Mikrocontroller dadurch aus das besonders viele Schnittstel
+len zusammen mit der Recheneinheit untergebracht wird.
+ Diese Schnittstellen und die Möglichkeit durch die Programmierung deren
+ Eingaben mit Ausgaben machen die Mikrocontroller zu autonomen Geräten.
+ Dadurch lassen sich komplexe Abläufe, Algorithmen und Regelungen mit geringen
+ Aufwand und Kosten automatisieren.
+ Das Verständis der Schnittstellen, ihren Einsatz, der Konfiguration und
+ Verwendung stellt dabei den Kern der Arbeit mit Mikrocontrollern dar.
+ Im Kurs werden daher genau diese Kenntnisse vermittel.
+ Neben dem Erlernen der eigentlichen Programmierung werden wir die Schnittstelle
+n durchgehen und lernen, wofür wir welche Einsetzen, wie wir sie Kombinieren
+ und worauf wir achten müssen.
+ Zunächst hier eine kleine Zusammenfassung der Schnisttellen und Teile des
+ Mikrocontrollers.
+\end_layout
+
+\begin_layout Subsubsection*
+Spannungsversorgung:
+\end_layout
+
+\begin_layout Standard
+Die Spannungsversorgung liefert die elektrische Leistung für den Mikrocontroller.
+ Arduinos gibt es in 2 verschiedenen Harware-Varianten bzw.
+ Typen, die sich in der Spannungsversorgung unterscheiden.
+ Zum Einen die 5 Volt-Spannungsversorgung (ältere Mikrocontroller) und zum
+ Anderen die 3.3 Volt-Variante (neuere Mikrokontroller, im Kurs verwendent).
+ Dabei ist zu berücksichtigen, das 5V-Signale in der Regel 
+\series bold
+\bar under
+nicht
+\series default
+\bar default
+ an 3.3V Pins angeschlossen werden dürfen.
+ Dadurch können empfindliche Mikrocontroller zerstört werden.
+\end_layout
+
+\begin_layout Subsubsection*
+Mikroprozessor:
+\end_layout
+
+\begin_layout Standard
+Der Mikrocontroller ist die Recheneinheit des Mikrocontrollers.
+ Er führt Befehle aus und speichert oder manipuliert Speicherbereiche (Register).
+ Im Gegensatz zu den CPUs eines PCs kommt meist die RISC- Architektur zum
+ Einsatz.
+ Unterscheiden sich dabei in der Speichertiefe.
+ D.h.
+ welche Größe z.B.
+ Variablen haben dürfen, die miteinander verechnet werden.
+ ZB.
+ 8-bit Architekturen können Zahlen mit Werten von 0 bis 255 in einem einzelnen
+ Schritten miteinander verechnen.
+ Größere Zahlen werden in Teiloperationen zerlegt und benötigen mehrere
+ Befehlstakte (sind langsam).
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+GPIOs:
+\end_layout
+
+\begin_layout Subsubsection*
+USB:
+\end_layout
+
+\begin_layout Subsubsection*
+UART:
+\end_layout
+
+\begin_layout Subsubsection*
+Timer:
+\end_layout
+
+\begin_layout Subsubsection*
+PWM:
+\end_layout
+
+\begin_layout Standard
+Die Pulsweitenmodulation
+\end_layout
+
+\begin_layout Subsubsection*
+ADC:
+\end_layout
+
+\begin_layout Standard
+Der Analag-zu-Digital-Wandler bzw.
+ Umsetzer ist einer der Besonderheiten die meist in von Mikrocontrollern
+ integriert zu finden sind.
+ Er gilt zusammen mit dem DAC als Bindeglied zwischen der physikalischen
+ (analogen) Welt und der Digitalen.
+ Er wandelt anliegende Spannungen in digitale Einheiten um.
+ Eine gute Übersicht und Erklärung ist unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://de.wikipedia.org/wiki/Analog-Digital-Umsetzer
+\end_layout
+
+\end_inset
+
+ zu finden.
+ Als weitere Lektüre ist 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.mikrocontroller.net/articles/AVR-Tutorial:_ADC
+\end_layout
+
+\end_inset
+
+ zu empfehlen.
+\end_layout
+
+\begin_layout Subsubsection*
+SPI und I2C:
+\end_layout
+
+\begin_layout Subsubsection*
+DAC:
+\end_layout
+
+\begin_layout Standard
+Das Gegenstück zum ADC ist der Digital-zu-Analog-Wandler.
+ Dieser wandelt digitale EInheiten in Spannungen bzw, Strom um.
+ Eine gute Erklärung findet sich unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.mikrocontroller.net/articles/DA-Wandler
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Hardware im Kurs:
+\end_layout
+
+\begin_layout Standard
+Über die Jahre haben sich neben den 8bit-Mikrocontrollern auch mächtigere
+ Mikrocontrollern mit neuen Schnittstellen wie USB oder Bluetooth zur Arduino-Ha
+rdware-Familie hinzugesellt.
+ Sie können Alle mit der gleichen Arduino-Umgebung programmiert werden untersche
+iden sich aber stark in ihrer Leistungsfähigkeit.
+ So können die älteren Mikrocontroller in einem Befehl z.B.
+ jediglich 8bit-Berechnungen durchführen (Zahlen von 0 bi 255).
+ Größere Zahlen oder Multiplikationen müssen bei ihnen Aufwendig zerlegt
+ werden und brauchen deshalb deutlich Länger.
+ Neuere Mikrocontroller haben 32bit-Architekturen und können so Zahlen von
+ 0 bis ca.
+ 4 Milliarden in einem Befehl miteinander verrechnen.
+ Auch Multiplikationen und Divisionen sind so deutlich schneller ausführbar.
+ Zusätzlich können neuere Mikrocontroller mit deutlichen mehr Befehle pro
+ Sekunde berechnen.
+ Im Vergleich: Der Atmega Uno kann 16 Millionen Berechnungen pro Sekunde
+ ausführen, der Arduino Due hingegen satte 72 Millionen.
+\end_layout
+
+\begin_layout Standard
+Für unseren Kurs wird daher ebenfalls ein Mikrocontroller der neuen Generation
+ eingesetzt.
+ Wegen des Preises und der Möglichkeit komplexere Aufgaben bewältigen zu
+ können wird allerdings keine Arduino-Hardware eingesetzt.
+ Wir setzen im Kurs natürlich die Arduino-Umgebung mit allen Werkzeugen
+ und Möglichkeiten ein.
+\end_layout
+
+\begin_layout Standard
+Konkret werden wir den 32bit-Mikrocontroller STM32F103 der europäischen
+ Firma STMicroelectronics verwenden.
+ Diese bieten mit ihrem Nucleo-Biard Kompatible Arduino-Geräte für das Einsteige
+rsegment ein.
+ Dieser ist Vergleichbar mit dem dem Arduino Due aber deutlich einfacher
+ beschaffbar.
+ Zum Vergleich hier eine kurze Tabellarische Zusammenfassung der Mikrocontroller.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vergleich zwischen Arduino Uno, STM32F103 und Arduino Due
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vergleich
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" width="4cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arduino Uno
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STM32F103
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arduino Due
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abgearbeitete 
+\begin_inset Newline newline
+\end_inset
+
+Befehle pro Sekunde
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16 Mio.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72 Mio.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72/84 Mio.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GPIO-Pins
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nucelo: 51, Blue-Pill: 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Architektur
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8bit (Zahlen von 0-255)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32bit (Zahlen von 0-4 Mrd)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32bit (Zahlen von 0-4Mrd)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spannungslevel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,3V mit 5V-Toleranten Pins
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,3V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+USB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kein echtes USB.
+ nur über UART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ja
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ja
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ADCs 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6 Kanäle, 1024 Stufen, 10 Tausend Messwerte pro Sekunde
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+max.
+ 16 Kanäle, 4096 Stufen, 500 Tausend Messwerte pro Sekunde
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12 Kanäle, 1024/4096 Stufen, 25 Tausend Messwerte pro Sekunde
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PWM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 Kanäle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Max.
+ 12 Kanäle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Max.
+ 12 Kanäle
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DAC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nein
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nein
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ja
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reichelt: 20€, Ebay: 3,5€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digikey (Nucleo): 12€, Ebay (Blue Pill): 2,5€
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reichelt 35€, Ebay 17€
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Software
+\end_layout
+
+\begin_layout Standard
+Kommen wir nun zur Arduino Umgebung.
+ Die sogenannten Arduino IDE (Integrated development enviroment / Integrierte
+ Entwicklungsumgebung) unterstützt uns bei der Programmierung.
+ Es übernimmt im Hintergrund die nötige Verwaltung und Kommandos zur Übersetzung
+ der Programmiersprache in die Maschinensprache.
+ Dieser Vorgang (
+\begin_inset Quotes gld
+\end_inset
+
+Kompilierung
+\begin_inset Quotes grd
+\end_inset
+
+) besteht aus vielen Kommandozeilen-Befehlen, Programmen und Skripten die
+ im Hintergrund ablaufen.
+ Der übersetzte Maschiencode kann anschließend mit der IDE in den entsprechenden
+ Arduino geladen werden (
+\begin_inset Quotes gld
+\end_inset
+
+Flashen
+\begin_inset Quotes grd
+\end_inset
+
+.
+ ) Zusätzlich bietet die Software zahlreiche Werkzeuge zum vereinfachen
+ des Programmierprozesses auf die wir später bei ihrer Benutzung eingehen
+ werden.
+\end_layout
+
+\begin_layout Standard
+Im Anschluss öffnet bitte die Arduino IDE und geht auf "Werkzeuge -> Board
+ ....
+ -> Boardverwalter" ( bzw.
+ in Englisch "Tools -> Board ...
+ -> Boardmanager").
+ Hier installiert ihr das Paket "Arduino SAMD Boards (32-bits ARM Cortex-M0+)
+ by Arduino
+\begin_inset Quotes grd
+\end_inset
+
+ installieren.
+ Nach anklicken erscheint hier die Schaltflähe zur Installation.
+ Voreingestellt sollte die neueste Version 1.6.6 installiert werden.
+ Hier werden im Hintergrund die richtigen Übersetzer für die Mikrocontroller
+ nachgeladen.
+\end_layout
+
+\begin_layout Subsubsection*
+Installation für Nucleo-Boards:
+\end_layout
+
+\begin_layout Standard
+Da wir im Kurs das Nucleo-Board von STM anstelle der klassischen Arduino-Hardwar
+e einsetzen werden, müssen wir nun noch das Addon STM32Duino für die Arduino-IDE
+ installieren.
+ Dieses Plugin erweitert die Umgebung, sodass diese Mikrocontroller/Boards
+ ebenfalls angesprochen und programmiert werden können.
+ Hierzu muss folgende gepackte Datei von 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip
+\end_layout
+
+\end_inset
+
+ heruntergeladen werden.
+ Anschließend ist der Inhalt je nach Betriebssystem in einen der folgenden
+ Ordner zu entpacken:
+\end_layout
+
+\begin_layout Itemize
+Unter Windows: 
+\begin_inset Quotes gld
+\end_inset
+
+Dokumente/Arduino/hardware
+\begin_inset Quotes grd
+\end_inset
+
+ (englische Systeme 
+\begin_inset Quotes gld
+\end_inset
+
+My Documents/Arduino/hardware
+\begin_inset Quotes grd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Unter MacOS: ~/Documents/Arduino/hardware/ 
+\end_layout
+
+\begin_layout Itemize
+Unter Linux: In den 
+\begin_inset Quotes gld
+\end_inset
+
+hardware
+\begin_inset Quotes grd
+\end_inset
+
+-Ordner deiner Arduino-Installation (
+\begin_inset Quotes gld
+\end_inset
+
+Sketches
+\begin_inset Quotes grd
+\end_inset
+
+-Ordner).
+ Führe anschließend das Skript 
+\begin_inset Quotes gld
+\end_inset
+
+tools/linux/install.sh
+\begin_inset Quotes grd
+\end_inset
+
+ aus
+\end_layout
+
+\begin_layout Standard
+Für MacOS und Linux sind zusätzlich noch weitere Schritte notwendig die
+ ihr unter https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Installation
+ nachlesen könnt.
+ 
+\end_layout
+
+\begin_layout Standard
+Nach erfolgreicher Installation der IDE und der Erweiterung sollte die Arduino
+ IDE nach dem Start wie folgt (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arduino-Uno"
+
+\end_inset
+
+) aussehen.
+ Im Menüpunkt 
+\begin_inset Quotes gld
+\end_inset
+
+Werkzeuge->Board ...
+ -> 
+\begin_inset Quotes grd
+\end_inset
+
+ muss das 
+\begin_inset Quotes gld
+\end_inset
+
+STM Nucleo F103RB
+\begin_inset Quotes grd
+\end_inset
+
+ aufgelistet werden.
+ Anderfalls sollten bitte die Installation der STM32Duino-Erweiterung überprüft
+ oder kontaktiert ggf.
+ den Kursleiter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Arduino_IDE_nach_Instal.png
+	lyxscale 25
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arduino-Uno"
+
+\end_inset
+
+Arduino Uno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Abschließend kann die Installation überprüft werden indem ein 
+\begin_inset Quotes gld
+\end_inset
+
+leeres
+\begin_inset Quotes grd
+\end_inset
+
+ Projekt in Maschinensprache übersetzt wird.
+ Dazu in der Arduino-IDE 
+\begin_inset Quotes gld
+\end_inset
+
+Datei -> Neu
+\begin_inset Quotes grd
+\end_inset
+
+ Ausführen und prüfen, ob unter 
+\begin_inset Quotes gld
+\end_inset
+
+Werkzeuge -> Board
+\begin_inset Quotes grd
+\end_inset
+
+ und 
+\begin_inset Quotes gld
+\end_inset
+
+Werkzeuge -> Processor
+\begin_inset Quotes grd
+\end_inset
+
+ die richtigen Einstellungen vorgenommen sind.
+ Ein 
+\begin_inset Quotes gld
+\end_inset
+
+Sketch -> Überprüfen / Kompilieren
+\begin_inset Quotes grd
+\end_inset
+
+ sollte mit folgender Ausgabe in der Konsole erfolgreich durchlaufen.
+ Anderfalls sollten zunächst die bisherigen Schritte überprüft werden.
+ Sollte dei Einrichtung weiterhin nicht funktionieren kann gern auch der
+ Kursleiter kotaktiert werden.
+ In entsprechenden Suchmaschinen, findet man zusätzlich meist Lösungen für
+ einzelne Probleme entsprechend der Ausgabe in der Konsole.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Arduino_Install_Check.png
+	lyxscale 25
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arduino-IDE-Check"
+
+\end_inset
+
+Arduino Uno
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Aufbau und Vorgehen mit der Entwicklungsumgebung:
+\end_layout
+
+\begin_layout Standard
+Die Arduino IDE ist in 4 Bereiche eingeteilt.
+ Von oben nach unten:
+\end_layout
+
+\begin_layout Itemize
+Das Menü mit allen generellen Funktionen zum speichern, verwalten und programmie
+ren der Projekte (sogenannte 
+\begin_inset Quotes gld
+\end_inset
+
+Sketche
+\begin_inset Quotes grd
+\end_inset
+
+).
+ Dazu Werkzeuge mit für die leichtere Arbeit und Einstellungmöglichkeiten
+ zu Boards.
+\end_layout
+
+\begin_layout Itemize
+Die Toolbar, welche die wichtigsten Funktionen zum Sketch enthält (Überprüfen,
+ Hochladen, Speichern etc.)
+\end_layout
+
+\begin_layout Itemize
+Der Quellcodeeditor (Programmm) augeteilt in Tabs für die Arbeit in mehreren
+ Dateien.
+\end_layout
+
+\begin_layout Itemize
+Die Status-Konsole als Anzeige der aktuellen Ereignisse und Ergebnisse.
+\end_layout
+
+\begin_layout Standard
+Ein neues Programm (
+\begin_inset Quotes gld
+\end_inset
+
+Sketch
+\begin_inset Quotes grd
+\end_inset
+
+) wird über Datei -> Neu erstellt oder ein bestehendes über Datei -> Öffnen
+ geladen.
+ Anschließend muss unter Werkzeuge -> Board ...
+ das richtige Board ausgewählt werden (hier im Kurs 
+\begin_inset Quotes gld
+\end_inset
+
+STM Nucleo F103RB
+\begin_inset Quotes grd
+\end_inset
+
+).
+ Für den Einstieg bringt die Arduino einige Beispiele mit.
+ Für die Arbeit mit dem STM Nucleo findet man nach Installation der STM32Duino-E
+rweiterung und Auswahl des richtigen Board ein eigener Bereich (
+\begin_inset Quotes gld
+\end_inset
+
+Datei -> Beispiele -> A_STM32_Examples
+\begin_inset Quotes grd
+\end_inset
+
+).
+ Für einen ersten Test mit Hardware lässt sich folgende Arbeitsabfolge zusammenf
+assen:
+\end_layout
+
+\begin_layout Itemize
+Öffnen der Arduino IDE
+\end_layout
+
+\begin_layout Itemize
+Einstellung des Board 
+\begin_inset Quotes gld
+\end_inset
+
+Werkzeuge -> Board ...
+\begin_inset Quotes grd
+\end_inset
+
+ auf 
+\begin_inset Quotes gld
+\end_inset
+
+STM Nucleo F103RB
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Öffnen eines Beispielprogramms 
+\begin_inset Quotes gld
+\end_inset
+
+Datei -> Beispiele -> A_STM32_Examples ->
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Programmierung
+\end_layout
+
+\begin_layout Standard
+Absatz Programmierung für Mikrocontroller
+\begin_inset Newline newline
+\end_inset
+
+Absatz Möglichkeiten Programmierung
+\end_layout
+
+\begin_layout Standard
+- Blockly
+\end_layout
+
+\begin_layout Standard
+- Vereinfachte Form der C (keine Header)
+\end_layout
+
+\begin_layout Standard
+- C Programmierung
+\begin_inset Newline newline
+\end_inset
+
+Programme heißen sketches
+\end_layout
+
+\begin_layout Standard
+Absatz C Programmierung
+\end_layout
+
+\begin_layout Standard
+- C Programmierung im Kurs
+\end_layout
+
+\begin_layout Standard
+- Verweis auf Anhang
+\end_layout
+
+\begin_layout Subsection
+Simulation
+\end_layout
+
+\begin_layout Standard
+Für den Einstieg in die Arbeit mit Mikrocontroller bietet das Arduino-Universum
+ die bislang benutezrfreundlichsten Werkzeuge.
+ Hierunter zählen auch ein sehr umfangreiches Simulationswerkzeug CircuitIO.
+ Dies wird von Ausodesk herausgegeben und ordnet sich in das Autodek-Entwickler-
+Universum ein.
+ Die Nutzung ist kostenfrei, erfordert jedoch eine Registrierung beim Anbieter.
+ Der Simulator kann nur mit Internetverbindung verwendet werden.
+ Für den Kurs wird besonders für die Vorführung und Erklärung der Funktionsweise
+ von Programmen und Schaltungen CircuitIO eingesetzt.
+ Auch während der eigenen Arbeit lohnt sich die Verwendung.
+ So können Fehler bereits vorher erkannt, Hardwareaufbauten korigiert und
+ Komplexe Programme auseinandergenommen werden.
+ Besonders die bereitgestellten Beispiele machen den Simulator zu einem
+ einsteigerfreundlich und mächtigen Helfer.
+ Einen guten Ausgangspunkt zum erlernen der Arbeitsweise und Komponenten
+ von CircuitIO bilden die Beispiele und Videos.
+ Diese lassen sich meist auf eigenen Projekte anpassen und erklären die
+ von vornherein inuitive Software.
+ Ein guter Einstieg mit Einsteiger-Videos lässt sich unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://circuits.io/home/learn
+\end_layout
+
+\end_inset
+
+ finden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/CircuitIO.png
+	lyxscale 25
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CircuitIO mit Arduino Uno - Beispiel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Workshop Abend 1
+\end_layout
+
+\begin_layout Subsection
+Unser erstes Programm, Blink!
+\end_layout
+
+\begin_layout Standard
+Das Blink Programm ist das berühmte Einsteiger-Programm.
+ Wir lassen unsere erste LED blinken.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day1_blink.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 1 für den Aufbau von Blink!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Schaltung lässt sich, wie die anderen Schaltungen unter 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://circuits.io/circuits/2734640-arduino-im-konglomerat-tag-1-blink"
+target "https://circuits.io/circuits/2734640-arduino-im-konglomerat-tag-1-blink"
+
+\end_inset
+
+ finden und testen.
+ Unser erster Quellcode sieht dabei wie folgt aus und ist unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/mdrobisch/arduino_kurs
+\end_layout
+
+\end_inset
+
+ zu finden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "E:/Workspaces/ArduinoKurs/Sourcecode_Git/1. Abend/Blink/Blink.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Blink (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Funktionsweise: Das Programm startet mit dem Ausführen der Befehle der setup
+ Funktion.
+ Hier initialisieren wir den GPIO 2 als Ausgang.
+ Anschließend führt der Mikrocontroller die Funktion 
+\begin_inset Quotes gld
+\end_inset
+
+loop
+\begin_inset Quotes grd
+\end_inset
+
+ als Schleife wiederholend aus.
+ Hier wird
+\begin_inset Newline newline
+\end_inset
+
+Wissen Arduino: Pins und digitale Ausgänge:
+\end_layout
+
+\begin_layout Itemize
+Die Steuerung des Mikrocontrollers erfolgt über Funktionen, welche die Register
+ des Mikrocontrollers entsprechend steuern (Register setzen)
+\end_layout
+
+\begin_layout Itemize
+Hauptbestandteil eines Programmes ist die Ansteuerung von Pins des Mikrocontroll
+ers, diese können eine der folgende Funktion einnehmen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Eingänge (Input Pins) zur Detektion von Spannungsleveln (0V-0,8 LOW, 1,6-3.3V
+ HIGH)
+\end_layout
+
+\begin_layout Itemize
+Ausgänge (Output Pins) zur Ansteuerung von externen Bauelementen (0V LOW,
+ 3.3V HIGH)
+\end_layout
+
+\begin_layout Itemize
+Spezialfunktionen wie Spannungswandler, Pulsweitenmodulation, Kommunikation
+ (wird in den nächsten Abschnitten detailiert beschrieben)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Die Funktion oder Modus eines Pins muss vor der Funktion umgeschalten werden.
+ Für die Verwendung als Ausgangs-Pin dient die Funktion 
+\series bold
+pinMode(Pinname
+\series default
+ [PB1]
+\series bold
+, Modus
+\series default
+ [INPUT]
+\series bold
+ )
+\end_layout
+
+\begin_layout Itemize
+Der Spannungspegel/level Ausgänge wird mit der digitalWrite-Funktion gesetzt.
+ 
+\series bold
+digitalWrite(Pinname 
+\series default
+[0]
+\series bold
+, Level
+\series default
+ [LOW / HIGH]
+\series bold
+)
+\series default
+ .
+\end_layout
+
+\begin_layout Standard
+Hinweis: Die Namenbezeichnungen/nummern der jeweiligen Pins sind im Angehang
+ in einer Übersicht aufgeführt.
+ Pin 0 und Pin 1 sind auf dem Nucleo-Board nicht verfügbar, da sie für Kommunika
+tionszwecke vorbelegt sind.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wissen C-Programmierung: Aufbau, Funktionen und Kommentare:
+\end_layout
+
+\begin_layout Itemize
+Funktionen haben in C folgende Struktur 
+\begin_inset listings
+lstparams "language=C,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\color{blue}},commentstyle={\color{OliveGreen}\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Blink (Quellcode unter www.github.de/arduino }"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Funktion ohne Übergabewerte (Parameter) und ohne Rückgabewert (void)
+\end_layout
+
+\begin_layout Plain Layout
+
+void funktionsname()
+\end_layout
+
+\begin_layout Plain Layout
+
+{   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// Funktion mit Übergabewerte (Parameter) und ohne Rückgabewert (void)
+\end_layout
+
+\begin_layout Plain Layout
+
+void funktionsname_mit_parametern(int parameter)
+\end_layout
+
+\begin_layout Plain Layout
+
+{   
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Parameter int ist eine Variable die ganzzahlige Werte speichert
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// Funktion ohne Übergabewerte (Parameter)
+\end_layout
+
+\begin_layout Plain Layout
+
+int funktionsname_mit_parametern()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	// als int Rückgabewert muss ein ganzzahliger Wert zurückgegeben werden
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 42;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Funktionsnamen dürfen nicht mit Zahlen anfangen und keine Leerzeichen enthalten
+ (weitere Namensregeln im Anhang: C Programmierugn)
+\end_layout
+
+\begin_layout Itemize
+Funktionen werden mit einem { und einem } vom restlichen Programm abgegrenzt
+\end_layout
+
+\begin_layout Itemize
+Funktionen können nach ihrer Definition wie folgt aufgerufen werden
+\begin_inset listings
+lstparams "language=C,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,keywordstyle={\color{blue}},commentstyle={\color{OliveGreen}\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Blink (Quellcode unter www.github.de/arduino }"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Aufruf einer Funktion ohne Übergabewert, z.B.
+ innerhalb der main-Funktion
+\end_layout
+
+\begin_layout Plain Layout
+
+void main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Funktionsaufruf einer Funktion ohne Parameter
+\end_layout
+
+\begin_layout Plain Layout
+
+	funktionsname();	// Anweisungen werden in C mit einem Semikolon abgeschlossen
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Funktionsaufruf einer Funktion mit konstanten Parameter
+\end_layout
+
+\begin_layout Plain Layout
+
+	funktioname(1,2,3);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Funktionsaufruf einer Funktion mit konstanten und variablen Parameter
+\end_layout
+
+\begin_layout Plain Layout
+
+	funktioname(1,variabelnanem,3); 	// die Verwendung von Variabeln werden
+ in den nächsten Abschnitten erläutert	
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Wie jede Anweisung in C wird auch ein Funktionsaufruf mit einem Semikolon
+ abgeschlossen.
+\end_layout
+
+\begin_layout Itemize
+Einzeilige Kommentare werden mit // eingeleitet, ab dieser Stelle wird die
+ komplette Zeile zum Kommentar (für den Programmablauf ignoriert)
+\end_layout
+
+\begin_layout Itemize
+Mehrzeilige Kommentare werden mit einem /* eingeleitet.
+ Das Kommentar gilt dann bis zum abschließenden */
+\end_layout
+
+\begin_layout Itemize
+Die hier eingeführte Verwendung von Variablen (und Parametern in Funktionen)
+ wird in den nächsten Abschnitt erläutert
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Übung: Verändern des Delays, Modus: Kurz lang Kurz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Überwachen von Tastern
+\end_layout
+
+\begin_layout Standard
+Nachdem wir nun Ausgänge beliebig schalten können werden wir uns an den
+ Eingängen versuchen.
+ Mit diesen können Ereignisse wargenommen werden.
+ Diese Ereignisse tretten als Spannungspegeln an den jeweiligen Pins auf.
+ Es können die Pegeln LOW und HIGH unterschieden und erkannt werden.
+ Mit folgendem Programm werden wir z.B den Zustand des Tasters anhand des
+ Pegels an Pin 12 überwachen.
+ Entsprechend der Stellung wird die LED blinken oder erlöschen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day1_button.png
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 2 für das Überwachen von Tastern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "E:/Workspaces/ArduinoKurs/Sourcecode_Git/1. Abend/Taster/Taster.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Taster (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+Wissen Arduino: Digitale Eingänge:
+\end_layout
+
+\begin_layout Itemize
+Zur Verwendung eines Pins als Eingang muss dieser mit 
+\series bold
+pinMode(Pinname
+\series default
+ [PB1]
+\series bold
+, Modus
+\series default
+ [INPUT]
+\series bold
+ )
+\series default
+ gesetzt werden
+\end_layout
+
+\begin_layout Itemize
+Eingänge erkennen von 0 - 0.8 V ein logisches LOW.
+ Ab 1.6-3.3V ein logisches HIGH (der Spannungsbereich dazwischen ist nicht
+ definiert, die Erkennung ist hier nicht vorhersehbar)
+\end_layout
+
+\begin_layout Itemize
+Der erkannte Zustand eines Eingangs kann mit einem 
+\series bold
+digitalRead(Pinname 
+\series default
+[PB2]
+\series bold
+)
+\series default
+ .
+ ausgelesen werden.
+ Diese Funktion gibt entsprechend den Wert HIGH oder LOW zurück.
+\end_layout
+
+\begin_layout Standard
+Wissen C-Programmierung Variablen und bedingte Ausführung (if-Anweisungen):
+\end_layout
+
+\begin_layout Itemize
+Funktionen haben in C folgende Struktur
+\end_layout
+
+\begin_layout Standard
+Wissen Arduino: Zeitfunktionen
+\end_layout
+
+\begin_layout Itemize
+Zum erfassen der Zeit und zum gezielten Warten stellt das Arduino-Framework
+ verschiedenen Funktionen zur Verfügung
+\end_layout
+
+\begin_layout Itemize
+Mit der häufigste Verwendung in vielen Programmen findet man die delay(milliseku
+nden) Funktion.
+ Das Programm pausiert für die übergebenen Anzahl von Millisekunden.
+\end_layout
+
+\begin_layout Itemize
+Die Gegenstücke zu delay sind die Funktionen millis() and micros().
+ Sie dienen der Erfassung der vergangenen Zeit.
+ Die Funktion millis() gibt die vergangenen Millisekunden seit Programmstart
+ wieder.
+ Die micros-Funktion die vergangenen Mikrosekunden, Hierbei ist zu beachten,
+ dass es jeweil einen Überlauf der Zahl nach 50 Tagen bzw.
+ 70 Minuten gibt.
+ Der zurückgegebene Wert beginnt dann von 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Übung: SOS auf Knopfdruck (3xKurz, 3xLang, 3xKurz)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mit dem Timer zum Lauflicht
+\end_layout
+
+\begin_layout Standard
+Zum Abschluss des Tages werden wir unsere erste Bibliothek kennenlernen.
+ Bibliotheken sind Programmteile, die bestimmte wiederkehrende Aufgaben
+ vereinfachen sollen.
+ Meist geschieht dies durch bereitgestellten Funktionen oder globale Variablen.
+ Wir werden nun die Timer Bibliothek kennenlernen.
+ Diesen werden wir verwenden um ein Lauflicht zu steuern.
+ Ein Timer oder auch Counter ist ein Modul des Mikrocontrollers, welches
+ die Takte des Taktgebers (Quarz oder oscillator) zählen kann.
+ Dieser lässt sich so einstellen, dass nach erreichen eines vorgegebenen
+ Schwellwertes eine Funktion ausgeführt werden.
+ Damit bietet sich die möglichkeit Zeit unabhängig vom jeweiligen Programm
+ zu messen oder Funktionen nach einer festen vorgegebener auszuführen.
+ Mikrocontroller haben meist mehrere dieser Timermodule.
+ Sie sind ein elementarer Betsandteil der Arbeit mir Mikrocontrollern.
+ Timer werden mit Spezialregistern gesteuert, die in den Datenblättern der
+ Mikrocontroller beschrieben sind .
+ Für einen Arduino mit Atmega32 (Uno) sieht die Einrichtung des Timers z.B.
+ wie folgt aus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\color{blue}},commentstyle={\color{OliveGreen}\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Blink (Quellcode unter www.github.de/arduino }"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/* Konfigurieren des Timer1 mit Spezialregistern */
+\end_layout
+
+\begin_layout Plain Layout
+
+/* Timer/Counter1 zurücksetzen*/
+\end_layout
+
+\begin_layout Plain Layout
+
+TCCR1A = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+TCCR1B = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+TIMSK1 = 0;          
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/* Einrichten des Timer/Counter1 */
+\end_layout
+
+\begin_layout Plain Layout
+
+TCCR1B |= (1 << CS11) | (1 << CS10);   // Prescalar/Vorteiler = 64
+\end_layout
+
+\begin_layout Plain Layout
+
+TCNT1 = 10000; // Zählermarke setzen (Angabe in Takten/Vorteiler)
+\end_layout
+
+\begin_layout Plain Layout
+
+TIMSK1 = (1 << TOIE1); // aktivieren des Timers     
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Das Arduino-Framework bietet hierfür keine mitgelieferten Funktionen.
+ Auch unterscheiden sich die Spezialregister und die Funktionsweise sehr
+ stark zwischen den eingesetzten Boards (z.B.
+ Arduino Uno, Mikro Due).
+ So würde selbe Code beim Einsatz des STM32F103, der im Kurs eingesetzt
+ wird, nicht compiliert werden können.
+ Wegen der Mikrocontrollerabhängigkeit und des unübersichtlichen Arbeiten
+ mit Spezialregistern, haben sich deshalb für Hardwaremodule (Timer, Schnittstel
+len, Analog-Digital-Wandler) Bibliotheken durchgesetzt.
+ Sie Stellen verständlichere Funktionen zur Verfügung.
+ Für den Arduino Uno ist z.B.
+ die TimerOne-Bibliothek sehr verbreitet.
+ Für diesen Fall sieht der Quelltext zum initialisieren desselben Timers
+ wie folgt aus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\color{blue}},commentstyle={\color{OliveGreen}\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Blink (Quellcode unter www.github.de/arduino }"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/* Konfigurieren des Timer1 mit Spezialregistern */
+\end_layout
+
+\begin_layout Plain Layout
+
+Timer1.initialize(150000);   // Zählermarke (Angabe in Microsekunden)
+\end_layout
+
+\begin_layout Plain Layout
+
+Timer1.attachInterrupt(blinkLED);   
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zunächst unsere Schaltung.
+ Wir können die Schaltung aus dem vorherigen Projekt übernehmen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day1_button.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 2 für das Arbeiten mit Timern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hier unterscheidet sich der Quellcode für den Einsatz eines Arduino-Boards
+ nocheinmal von dem des eingesetzten STM32Duino-Bibliotheken.
+ Eine sehr umfangreiche Dokumentation der bereitgestellten STM32Duino-Bibliothek
+en findet sich unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://docs.leaflabs.com/docs.leaflabs.com/index.html
+\end_layout
+
+\end_inset
+
+.
+ Besonders der Bereich der 
+\series bold
+Hardware Peripherals
+\series default
+ ist ein guter Anlaufpunkt.
+ Wir werden uns im letzten Beispiel-Programm des Abends auf die Timer-Bibliothek
+konzentrieren.
+ Dabei beschränkt sich das kennenlernen auf die wsentlichen Funktionen und
+ Aufrufe ohne tiefgründig die Funktionsweise zu hinterfragen.
+ In den nächsten Teilen des Workshops werden wir dann gezielter auf die
+ Hintergründe eingehen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "E:/Workspaces/ArduinoKurs/Sourcecode_Git/1. Abend/Timer/Timer_STM32Duino/Timer_STM32Duino.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ LED-Timer (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+HINWEIS:
+\series default
+ Der abgebildetet Quellcode liegt im Quellcode-Verezeichnis in zwei Varianten
+ vor.
+ Variante A ist der Quellcode für den Einsatz mit STM32Duino-Boards.
+ In Variante B wird zwischen dem Einsatz der STM32Duino und der Arduino-Uno
+ Boards unterschieden.
+ Dies wird benötigt um Die Funktionsweise im Simulator testen zu können,
+ welcher nicht für den Einsatz mit STM32-Boards konzipiert ist.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+
+\series bold
+Übung:
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+Für Einsteiger: Erweitere das Programm so, dass die LED nur blinkt, wenn
+ der Taster geschlossen ist.
+\begin_inset Newline newline
+\end_inset
+
+Für Profs: Erweitere das Programm so, dass auch hier SOS nach Knopfdruck
+ ausggeben wird
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hausaufgabe: Lauflicht
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Hausaufgabe (freiwillig)
+\end_layout
+
+\begin_layout Subsubsection*
+Für Einsteiger:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Workshop Abend 2
+\end_layout
+
+\begin_layout Subsection
+Hausaufgabe: Lauflicht
+\end_layout
+
+\begin_layout Subsection
+Ereignisse Zählen per Polling
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day2_polling.png
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 3 für das Zählen mit Polling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "E:/Workspaces/ArduinoKurs/Sourcecode_Git/2. Abend/EreignisPolling/EreignisPolling.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Polling (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Simulationen sind unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://circuits.io/users/763753
+\end_layout
+
+\end_inset
+
+ zu finden.
+ Die Quellcodes unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/mdrobisch/arduino_kurs
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Transistoren
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Schaltzeichen_bc547.jpg
+	lyxscale 50
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltsymbol mit Pinbelegung des BC547-NPN-Transistors (Quelle: www.http://potent
+iallabs.com/)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Transistor_Schaltung.png
+	lyxscale 50
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung mit NPN-Transistor
+\begin_inset Newline newline
+\end_inset
+
+(Quelle: www.mikrocontroller.net)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/transistor_gesperrt.png
+	lyxscale 50
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/transistor_offen.png
+	lyxscale 50
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Funktion des Transistors, gesperrt und offen (Quelle: http://www.leifiphysik.de/)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Andere Transistortypen und elektronische Schalter:
+\end_layout
+
+\begin_layout Standard
+Die oben beschriebenen Transistoren sind sogenannte Bipolartransistoren.
+ Darüber hinaus sind weitere Transistortypen und elektronische Schalter
+ sehr verbreitet.
+\end_layout
+
+\begin_layout Itemize
+Mosfet Transistoren: höhere Leistungen
+\end_layout
+
+\begin_layout Itemize
+Thyristoren: elektronische Schalter für Netzspannungen (nicht für Gleichspannung
+ geeignet)
+\end_layout
+
+\begin_layout Itemize
+Relais: Universale Schalter für Netz- oder Gleichspannung und sehr hohe
+ Leistungen (meist nur geringe Schaltfrequenzen mit Prelleigenschaft)
+\end_layout
+
+\begin_layout Subsection
+Ereignisse Zählen per Interrupt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day2_polling.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 3 für das Zählen mit Interrupt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "E:/Workspaces/ArduinoKurs/Sourcecode_Git/2. Abend/EreignisInterrupt/EreignisInterrupt/EreignisInterrupt.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Interrupt (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ereignisse entprellen
+\end_layout
+
+\begin_layout Standard
+Besonders bei Ereignissen, die durch mechanische Taster oder Schalter ausgelösst
+ werden kann es zu einem Schwingverhalten kommen.
+ Da der Mikrocontroller sehr schnell auf Ereignisse reagieren kann (Millionstel
+ einer Sekunden) reagiert er auch auf dieses Schwingverhalten.
+ Ein Tastendruck wird so z.B.
+ oft mehrmals erkannt und lösst hintereinander mehrere Ereignisses aus.
+ Dieser Effekt wird Prellen genannt.
+ Um dies zu verhindern werden zusätzlich Mechanismen eingebaut, um dies
+ zu verhindern.
+ Das sogenannte 
+\begin_inset Quotes gld
+\end_inset
+
+Entprellen
+\begin_inset Quotes grd
+\end_inset
+
+.In dem Arduino-Beispiel 
+\begin_inset Quotes gld
+\end_inset
+
+EreignisInterruotErweitert
+\begin_inset Quotes grd
+\end_inset
+
+ wird dies für den angeschlossenen Taster (gleicher Schaltungsaufbau) realisiert.
+\end_layout
+
+\begin_layout Standard
+Dies wird hier (in einer einfachen Realisierung) ermöglicht, indem das Ereignis
+ nach dem erstmaligen auftreten zunächst eine definierte Zeit nicht erneut
+ ausgelöst werden kann.
+\end_layout
+
+\begin_layout Subsection
+Kommunikation mit dem PC, Hallo Welt!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day2_polling.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 4 für unser 
+\begin_inset Quotes gld
+\end_inset
+
+Hallo Welt
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "../Sourcecode_Git/2. Abend/HalloWelt/HalloWelt.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={Hallo Welt (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kontrollstrukturen in C
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day2_polling.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 3 Kontrollstrukturen in C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Im Kurs wird nur wenig auf die Programmiersprache C eingegangen.
+ Die meisten Anfänger ziehen (meines Kenntnissstandes) das Erlernen und
+ die Eingewöhnung an Beispielen, den theoretischen Diskurs vor.
+ In diesen Abschnitt sollen dennoch die Grundlagen der Programmiersprache
+ vermittelt werden.
+ Da dieser Teil nicht Bestandteil des Abendkurses ist empfiehlt sich für
+ Interessierte eine Lektüre als Hausaufgabe oder nach Abschluss des Kurses.
+ Die Erklärungen finden auch in diesem Fall an konkreten Beispielen statt.
+ Die Simulationen sind unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://circuits.io/users/763753
+\end_layout
+
+\end_inset
+
+ zu finden.
+ Die Quellcodes unter 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/mdrobisch/arduino_kurs
+\end_layout
+
+\end_inset
+
+ .
+ Im Internet kursieren darüber hinaus weitere sehr zu empfehlenswerte Tutorials.
+ Zum Teil speziell für Mikrocontroller.
+ Folgende sollen hier kurz genannt werden:
+\end_layout
+
+\begin_layout Itemize
+www.mikrocontroller.net
+\end_layout
+
+\begin_layout Subsubsection*
+Mathematische Ausdrücke:
+\end_layout
+
+\begin_layout Itemize
+Zuweisungen: =
+\end_layout
+
+\begin_layout Itemize
+Basisoperationen: +, -, *, /
+\end_layout
+
+\begin_layout Itemize
+Erweiterte Zuweisung: +=, -=, *=, /=
+\end_layout
+
+\begin_layout Itemize
+Dekrement / Inkrementieren
+\end_layout
+
+\begin_layout Itemize
+Weitere Operationen: %
+\end_layout
+
+\begin_layout Subsubsection*
+Boolsche (logische Ausdrücke):
+\end_layout
+
+\begin_layout Itemize
+AND - &&
+\end_layout
+
+\begin_layout Itemize
+OR - ||
+\end_layout
+
+\begin_layout Subsubsection*
+Schleifen:
+\end_layout
+
+\begin_layout Itemize
+while
+\end_layout
+
+\begin_layout Itemize
+for
+\end_layout
+
+\begin_layout Subsubsection*
+Fallunterscheidungen:
+\end_layout
+
+\begin_layout Itemize
+switch
+\end_layout
+
+\begin_layout Itemize
+if
+\end_layout
+
+\begin_layout Subsubsection*
+Besondere Ausdrücke:
+\end_layout
+
+\begin_layout Itemize
+Löschen und Setzen von Bits mit 
+\end_layout
+
+\begin_layout Itemize
+Bitshift
+\end_layout
+
+\begin_layout Itemize
+Abfragen von Bits
+\end_layout
+
+\begin_layout Itemize
+Bedingte Zuweisung
+\end_layout
+
+\begin_layout Subsection*
+Hausaufgabe (freiwillig)
+\end_layout
+
+\begin_layout Standard
+Ansteuern eines Schrittmotors
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schrittstellung
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IN1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IN2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IN3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IN4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schrittmotoransteuerung
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hausaufgabe: Schrittmotor-ansteuerung
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Workshop Abend 3
+\end_layout
+
+\begin_layout Subsection
+Servos ansteuern
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day3_servo.png
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für das Ansteuern des Servos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "../Sourcecode_Git/3. Abend/Servo/Servo.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Servo (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Messen mit dem ADC.
+ Der Joystick!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day2_joystick.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 4 für unser das Messen mit dem ADC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "../Sourcecode_Git/3. Abend/ADC/ADC.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ADC (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ADC und Servo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/day3_servo+joystick.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 4 für unser das Messen mit dem ADC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "../Sourcecode_Git/3. Abend/ADCServo/ADCServo.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ ADC \\& Servo (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bonus: Jede Menge Extras
+\end_layout
+
+\begin_layout Standard
+Schrittmotoren, Die LED Anzeige, Ansteuern von Relays, Pulsweitenmodulation
+ (PWM), WLAN
+\end_layout
+
+\begin_layout Subsection
+Bonus: Steuerung und Visualisierung mit Python
+\end_layout
+
+\begin_layout Subsection
+Hausaufagbe: LED Matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuits/led_matrix.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "../Sourcecode_Git/Extra Schaltungen/LEDMatrix/LEDMatrix.ino"
+lstparams "language=C,numbers=left,numberstyle={\\footnotesize},basicstyle={\\footnotesize\\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\\color{blue}},commentstyle={\\color{OliveGreen}\\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={LED-Matric (Quellcode unter www.github.de/arduino)}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ausblick
+\end_layout
+
+\begin_layout Subsection
+Grenzen des Arduino / STM32Duino
+\end_layout
+
+\begin_layout Subsection
+Alternative Entwicklungsumgebungen
+\end_layout
+
+\begin_layout Subsection
+Alternative Mikrocontroller
+\end_layout
+
+\begin_layout Subsection
+Einplatinenrechner
+\end_layout
+
+\begin_layout Subsection
+Projekte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addsec*
+Anhang: Pinbelegungen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "b"
+hor_pos "c"
+has_inner_box 1
+inner_pos "s"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "1pheight%"
+height_special "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Pinput_Uno.jpg
+	width 17cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Arduino Uno
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/stm32f103c8t6_pinout.png
+	width 17cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+STM32F103 Nucleo Arduino Pinbelegung (Quelle: www.heise.de)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/stm32f103c8t6_port_configuration.png
+	width 17cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+STM32F103 Nucleo Konfiguration (Quelle: http://library.skema.edu/)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "50pheight%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/stm32f103c8t6_full_pinout.png
+	width 17cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+STM32F103 Nucleo vollständige Pinbelegung (Quelle: www.heise.de)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "50pheight%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/Pinout_Micro.png
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Arduino Micro (Quelle: http://www.pighixxx.com/)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "80page%"
+special "none"
+height "50pheight%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/stm32f103c8t6_pinout03.png
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+STM32F103C8T6 (Quelle: http://thdarduino.blogspot.de/)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addsec*
+\begin_inset Newpage newpage
+\end_inset
+
+Anhang: Die wichtigsten Regeln und Tipps
+\end_layout
+
+\begin_layout Addsec*
+\begin_inset Newpage newpage
+\end_inset
+
+Anhang: Übungen
+\end_layout
+
+\begin_layout Subsection*
+Workshop Abend 1:
+\end_layout
+
+\begin_layout Itemize
+Fragen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Wie wird ein Ausgang für den Arduino gesetzt?
+\end_layout
+
+\begin_layout Itemize
+Wie muss der Quellcode für den schnellstmöglichen Wechseln eines GPIO-Ausgangspi
+ns in einer while-Schleife aussehen? (mit den gelernten Funktionen)
+\end_layout
+
+\begin_layout Itemize
+Wie heißt der Funktionskopf (Prototyp) für eine Funktion foo, die als Parameter
+ bar (ganzahlige, positiv, 8-bit) verwendet und einen Wert des gleichen
+ Typs zurückgibt?
+\end_layout
+
+\begin_layout Itemize
+Welche Parameter müssen für den Einsatz eines Timers zwingend gesetzt werden
+ (Initialisierung und Konfiguration)?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Quellcode korrigieren
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Anhang: C Programmierung für Mikrocontroller
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left,numberstyle={\small},basicstyle={\ttfamily},breaklines=true,showstringspaces=false,keywordstyle={\color{blue}},commentstyle={\color{OliveGreen}\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Bitmanipulation }"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x |= (1 << Bitnummer);  // So wird ein Bit in x gesetzt  
+\end_layout
+
+\begin_layout Plain Layout
+
+x &= ~(1 << Bitnummer); // So wird ein Bit in x geloescht
+\end_layout
+
+\begin_layout Plain Layout
+
+x ^= (1 << Bitnummer);  // So wird ein Bit in x getoggelt/umgeschalten
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addsec*
+\begin_inset Newpage newpage
+\end_inset
+
+Anhang: Bibliotheken und Dokumentation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addsec*
+Anhang: Alternative Arduino-Boards
+\end_layout
+
+\begin_layout Standard
+Der Vorteil der Arduino-Umgebung ist die vielseitige Einsatzmöglichkeit
+ unterschiedlicher Boards.
+ Während im Kurs 
+\end_layout
+
+\begin_layout Subsection*
+Empfohlene Boards
+\end_layout
+
+\begin_layout Subsection*
+Unterschiede bei der Programmierung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addsec*
+Anhang: Alternative Entwicklungsumgebung OpenSTM32 
+\end_layout
+
+\begin_layout Standard
+OpenSTM32 bietet eine Alternative Entwicklungsumgebung für das im Kurs verwendet
+en Nucleo Board.
+ Es richtet sich an fortgeschrittene und professionelle Programmier bzw.
+ Entwickler.
+ Besonders die Möglichkeit den Programmcode Schritt für Schritt durchlaufen
+ zu können und an bestimmten Stellen (Breakpoints), wie im Simulator anzuhalten,
+ wird von vielen Entwicklern vermisst.
+ Auch kann deutlich tiefer in die einzelnen Schnittstellen eingegriffen
+ werden, als das bei Arduino der Fall ist.
+ Dies ermöglicht die Performance des Mikrocontroller vollständig auszuschöpfen
+ und unterscheidet sich stark von der Verwendung der Arduino-Umgebug.
+ Zusätzlich bietet STM große gut gepflegte Bibliotheken an, die die Konfiguratio
+n einzelner Bausteine vereinfachen.
+ Aus diesem Grund unterscheidet sich die Arbeit mit OpenSTM32 hier auch
+ vollkommen von der mit der Arduino-Umgebung.
+ Die Programmierung ist weniger Intuitiv und die Arbeit weniger für Anfänger
+ geeignet.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An dieser Stelle soll die Installation sowie das Erstellen und Compilieren
+ eines Blink_Projektes gezeigt werden.
+ OpenSTM32 wird kostenlos von AC6 im Auftrag von STM zur verfügung gestellt
+ und basiert auf der weit Verbreiteten Eclipse Umgebung.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 1: Donwload & Installation
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+OpenSTM32 kann Kostenlos unter http://www.openstm32.org/ heruntergeladen gewerden.
+ Um in den Downloadbereich zu gelangen ist ein eine Registrieung und Anmeldung
+ nötig.
+ Anschließend kann OpenSTM32 auf bekannte weiße installiert werden
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 2: Öffnen von OpenSTM32
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Nach dem öffnen von OpenSTM32 (Eclipse.exe) wird zunächst der Workspace abgefragt.
+ Der Workspace ist der Speicherort (Verzeichnis) für ein oder mehrere Projekte
+ und kann beliebig gewählt werden.
+ Nach Auswahl des Workspaces kommt man anschließend auf die Willkommensseite.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 3: Projektname und Projekttyp
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Nun werden wir nach einem Projektname (z.B.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+blink
+\begin_inset Quotes grd
+\end_inset
+
+) und dem Projekttyp bzw.
+ der Toolchain (Übersetzungswerkzeuge) gefragt.
+ Als Projekttyp wählen wir 
+\begin_inset Quotes gld
+\end_inset
+
+Ac6 STM32 MCU Project
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Als Toolchain die Auswahl 
+\begin_inset Quotes gld
+\end_inset
+
+Ac6 STM32 MCU GCC
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Anschließend wird die Eingabe mit 
+\begin_inset Quotes gld
+\end_inset
+
+Next
+\begin_inset Quotes grd
+\end_inset
+
+ bestätigt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/OpenSTM32/Project_settings.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 4: Projektname und Projekttyp
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Nun werden wir nach einem Projektname (z.B.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+blink
+\begin_inset Quotes grd
+\end_inset
+
+) und dem Projekttyp bzw.
+ der Toolchain (Übersetzungswerkzeuge) gefragt.
+ Als Projekttyp wählen wir 
+\begin_inset Quotes gld
+\end_inset
+
+Ac6 STM32 MCU Project
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Als Toolchain die Auswahl 
+\begin_inset Quotes gld
+\end_inset
+
+Ac6 STM32 MCU GCC
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Anschließend wird die Eingabe mit 
+\begin_inset Quotes gld
+\end_inset
+
+Next
+\begin_inset Quotes grd
+\end_inset
+
+ bestätigt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/OpenSTM32/Project_settings.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 5: Projektkonfigurationen
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Unter Projektkonfigurationen verstehen sich unterschiedlich Übersetzungmechanism
+en für den Microkontroller.
+ In den meisten Fällen reicht eine einzelne 
+\begin_inset Quotes gld
+\end_inset
+
+Debug
+\begin_inset Quotes grd
+\end_inset
+
+-Konfiguration.
+ Die 
+\begin_inset Quotes gld
+\end_inset
+
+Release
+\begin_inset Quotes grd
+\end_inset
+
+-Konfiguration wird abgewählt und mit 
+\begin_inset Quotes gld
+\end_inset
+
+Next
+\begin_inset Quotes grd
+\end_inset
+
+ bestätigt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/OpenSTM32/Project_configurations.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 6: Board-Auswahl
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Im nächsten Schritt geben wir das Mikrocontroller-Board an.
+ Mikrocontroller-Familie (Series) wählen wir so z.B.
+ die 
+\begin_inset Quotes gld
+\end_inset
+
+STM32F1
+\begin_inset Quotes grd
+\end_inset
+
+-Familie aus und haben anschließend das Nucleo-Board zur Auswahl.
+ Für andere Nucleo-Board ist dies Analog möglich.
+ Zusätzlich können an dieser Stelle auch eigene Boards nach Vorlagen erstellt
+ werden.
+ Anchließend bestätigen wir unsere Auswahl mit 
+\begin_inset Quotes gld
+\end_inset
+
+Next
+\begin_inset Quotes grd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/OpenSTM32/Project_mcu_configurations.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Schritt 7: Mikrocontroller-Bibliotheken
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Wie bereits erwähnt stellt STM bzw.
+ ARM umfangreiche Bibliotheken zur Ansteuerungen der Schnittstellen und
+ Module zuer Verfügung.
+ Den sogenannten 
+\begin_inset Quotes gld
+\end_inset
+
+Cube HAL
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Diese sollen auch hier eingesetzt und ausgewählt werden.
+ Nach der Auswahl der 
+\begin_inset Quotes gld
+\end_inset
+
+Cube HAL
+\begin_inset Quotes grd
+\end_inset
+
+ können diese per Download in das Projekt hinzugefügt werden (einmaliger
+ Vorgang).
+ Die Voreinstellungen (
+\begin_inset Quotes gld
+\end_inset
+
+Add low level drivers ...
+\begin_inset Quotes grd
+\end_inset
+
+ und 
+\begin_inset Quotes gld
+\end_inset
+
+As static external libraries
+\begin_inset Quotes grd
+\end_inset
+
+) sollten beibehalten werden.
+ Zusätzlich können Mikrocontrollerahngige Bibliotheken für z.B.
+ Touch oder USB eingebunden werden.
+ Für unser Beispielprojekt verzichten wir darauf.
+ Auch Bibliotheken von 3-Anbieter (wie die Dateisystem-Unterstützugn FatFS
+ oder das Echtzeit-Betriebssystem FreeRTOS) werden wir hier nicht einsetzen.
+ Wir schließen unsere Projektkonfiguration mit 
+\begin_inset Quotes gld
+\end_inset
+
+Finish
+\begin_inset Quotes grd
+\end_inset
+
+ ab.
+ OpenSTM32 wird das Projekt nun für uns erstellen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/OpenSTM32/Project_firmware_configurations_options.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+Schritt 8: Programmierung
+\end_layout
+
+\begin_layout Standard
+Nachdem das Projekt eingerichtet wurde sehen wir uns zunächst den nötigen
+ Quellcode an.
+ Zu beachten ist die grundlegend andere Struktur und Vorgehensweise im Vergleich
+ zu den Programmen in der Arduino-Umgebung.
+ Der Startpunkt eines C-Projektes ist die main()-Funktion, die meist in
+ einer main.c-Quellcode-Datei eingebetet ist.
+ Der Quellcode (main.c)für das 
+\begin_inset Quotes gld
+\end_inset
+
+Blink
+\begin_inset Quotes grd
+\end_inset
+
+-Testprogramm sieht wie folgt aus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left,numberstyle={\footnotesize},basicstyle={\footnotesize\ttfamily},breaklines=true,showstringspaces=false,tabsize=3,keywordstyle={\color{blue}},commentstyle={\color{OliveGreen}\itshape},frame=lrbt,xleftmargin=15pt,captionpos={b},caption={ Blink (Quellcode unter www.github.de/arduino }"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include "stm32f1xx.h" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#include "stm32f1xx_nucleo.h"
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+int main(void) 
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+	// initialisation of variables, interfaces and modules
+\end_layout
+
+\begin_layout Plain Layout
+
+	int counter = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+	HAL_Init();
+\end_layout
+
+\begin_layout Plain Layout
+
+	GPIO_InitTypeDef GPIO_InitStruct;
+\end_layout
+
+\begin_layout Plain Layout
+
+	/* GPIO Ports Clock Enable */
+\end_layout
+
+\begin_layout Plain Layout
+
+	__GPIOA_CLK_ENABLE();
+\end_layout
+
+\begin_layout Plain Layout
+
+	/*Configure GPIO pin : PI1 */
+\end_layout
+
+\begin_layout Plain Layout
+
+	GPIO_InitStruct.Pin = GPIO_PIN_5;
+\end_layout
+
+\begin_layout Plain Layout
+
+	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+\end_layout
+
+\begin_layout Plain Layout
+
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+\end_layout
+
+\begin_layout Plain Layout
+
+	GPIO_InitStruct.Speed = GPIO_SPEED_LOW;
+\end_layout
+
+\begin_layout Plain Layout
+
+	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	// the main loop
+\end_layout
+
+\begin_layout Plain Layout
+
+	while(1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+	{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+\end_layout
+
+\begin_layout Plain Layout
+
+		HAL_Delay(100);
+\end_layout
+
+\begin_layout Plain Layout
+
+		counter += 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Schritt 9: Kompilieren (Build)
+\end_layout
+
+\begin_layout Standard
+Nach der Eingabe des Quellcodes können wir den Kompilierprozess starten.
+ Dies wird mit 
+\begin_inset Quotes gld
+\end_inset
+
+Project->Build All
+\begin_inset Quotes grd
+\end_inset
+
+ angestoßen.
+ Durch einen Fehler in OpenSTM können fälschlicherweise Fehlermeldungen
+ in der Form 
+\begin_inset Quotes gld
+\end_inset
+
+Programm arm-....
+ not found in PATH
+\begin_inset Quotes grd
+\end_inset
+
+ eingeblendet werden.
+ Diese können per Rechtklick gelöscht werden und tauchen anschließend nicht
+ wieder auf.
+ Der Fehler un die OpenSTM-Umgebung mit Quellcode sieht entsprechend der
+ folgenden Abbildung aus.
+ Der 
+\begin_inset Quotes gld
+\end_inset
+
+Build
+\begin_inset Quotes grd
+\end_inset
+
+-Vorgang sollte dabei ohne Fehler (
+\begin_inset Quotes gld
+\end_inset
+
+Build Finished
+\begin_inset Quotes grd
+\end_inset
+
+) durchlaufen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/OpenSTM32/Compiler_Errors.png
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 10: Programme auf das Nucelo-Board laden und ausführen (Flash)
+\end_layout
+
+\begin_layout Standard
+Das kompilierte Programm kann im nächsten Schritt mit 
+\begin_inset Quotes gld
+\end_inset
+
+Run->Run
+\begin_inset Quotes grd
+\end_inset
+
+ auf das Board und den Mikrocontroller geladen werden.
+ Das letzte Programm ist anschließend permanent auf dem Mikrocontroller
+ gespeichert und startet ach ohne Programmierschnittstelle zum PC direkt
+ nach einem 
+\begin_inset Quotes gld
+\end_inset
+
+Power-Up
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Schritt 11: Fehleranalyse (Debug)
+\end_layout
+
+\begin_layout Standard
+Meist ist es notwendig Fehler im Programmablauf nachzuvollziehen.
+ Eine Methode ist die im Kurs kennengelernte 
+\begin_inset Quotes gld
+\end_inset
+
+printf
+\begin_inset Quotes grd
+\end_inset
+
+-Funktion, die Status und Variableninhalte ausgeben kann.
+ In komplizierten Fällen oder bei der Verwendung in Interrupts wird diese
+ Methode jedoch schnell Unübersichtlich oder Unzuverlässig.
+ Mit OpenSTM32 kann ein Debug Modus gestartet werden.
+ Dieser ermöglich das Schritt-Für-Schrittdurchlafen des Programmes.
+ Zusätzlich kann an beliebigen Stellen Haltepunkte eingefügt werden.
+ Erreicht das Programm diese Stelle, wird er Prozessor anhalten und auf
+ Eingabe des Programmierers warten.
+ Dies ermöglicht Variablen auszulesen und auch komplexe Verzweigungen einfach
+ nachzuvollziehen..
+ Durch Doppelklich auf die 
+\begin_inset Quotes gld
+\end_inset
+
+Blaue
+\begin_inset Quotes grd
+\end_inset
+
+-Leiste im Quellcode-Fenster können diese Haltepunkte (Breakpoints) eingefügt
+ werden.
+ Anschließend kann der Debug-Modus mit 
+\begin_inset Quotes gld
+\end_inset
+
+Run>Debug
+\begin_inset Quotes grd
+\end_inset
+
+ gestartet werden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addsec*
+Anhang: Blue Pill STM32F103C8T6
+\end_layout
+
+\begin_layout Standard
+Es gibt 2 Möglichkeiten mit dem sogennannten Blue Pill zu arbeiten.
+ Zum einen das Flashen eines STM32Duino Bootloaders.
+ In diesem Fall ist der der Blue Pill über die gezeigte Arduino Umgebung
+ mit STM32Duino-Erweiterung Programmierbar.
+ Zum anderen ist die Verwendung des Nuleo-Boards als Programmierschnisttelle
+ möglich.
+ Bisher ist hier aber nur die Verwendung mit der OpenSTM32-Umgebung getestet.
+ Die direkte Verwendung mit der Arduino-Umgebung ist daher bisher nicht
+ vorgesehen.
+\end_layout
+
+\begin_layout Subsection*
+Verwendung mit Arduino und STM32Duino Boatloader
+\end_layout
+
+\begin_layout Itemize
+Für die Verwendung mit der gezeigten Arduino-Umgebung muss der Blue Pill
+ mit einem Bootloader gespielt worden sein.
+ Diese werden meist ohne diesen Angeboten.
+ Eine Anleitung hierzu findet ihr im nächsten Abschnitt.
+\end_layout
+
+\begin_layout Itemize
+Die Arduino-Umgebung muss wie im Kurs gezeigt Konfiguriert und Lauffähig
+ sein
+\end_layout
+
+\begin_layout Itemize
+Anschluss des Boards erfolgt per USB
+\end_layout
+
+\begin_layout Itemize
+Folgende Einstellungen müssen in der Arduino-Umgebung eingestellt werden:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Board: 
+\begin_inset Quotes gld
+\end_inset
+
+Genereic STM32F103C Series
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Variant: 
+\begin_inset Quotes gld
+\end_inset
+
+STM32F103C8 (20K RAM 64K Flash)
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Upload method: 
+\begin_inset Quotes gld
+\end_inset
+
+STM32Duino Bootloader
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+ACHTUNG
+\series default
+: Manche Board in Verbindung mit einigen PCs/Laptops sollen Probleme haben,
+ die USB-Verbindung richtig zu erkennen.
+ Dies liegt an einer Fehlerhaften Beschaltung mancher Boards von einigen
+ Händlern.
+ Als Lösung bietet sich an zwischen den 
+\begin_inset Quotes gld
+\end_inset
+
+PA12
+\begin_inset Quotes grd
+\end_inset
+
+ Pin und 3.3V 
+\end_layout
+
+\begin_layout Subsection*
+Beschaltung mit einem Nucleo Board
+\end_layout
+
+\begin_layout Standard
+Die beiden Jumper CN2 müssen offen sein bzw.
+ entfernt werden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Workspaces/ArduinoKurs/STM32F103C8T6/Nucleo_Programming.png
+	lyxscale 50
+	width 11cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ACHTUNG
+\series default
+: Bei Verwendung in Zusammenspiel mit der OpenSTM32-Umgebung muss in Schritt
+ 7 neues Board erstelllt werden.
+ 
+\end_layout
+
+\begin_layout Addsec*
+Anhang: Flash Bootloader 
+\end_layout
+
+\begin_layout Standard
+Für den Flash-Vorgang wird das ein Nucleo-Board mit der Beschaltung aus
+ dem vorherigen Abschnitt benötigt.
+ Zusätzlich ist das STM32 LINK Utility von STM zu downloaden und zu installieren.
+ Die benötigte Firmware in kompilierter Form wird von STM32Duino zur Verfügung
+ gestellt.
+ Ein Download der passenden Version (generic_boot20_pc13.bin) ist unter https://g
+ithub.com/rogerclarkmelbourne/STM32duino-bootloader/tree/master/STM32F1/binaries
+ möglich.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename E:/Workspaces/ArduinoKurs/STM32F103C8T6/STM32 ST-Link Utility.png
+	lyxscale 50
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schaltung 5 für die Ansteuerung der LED Matrix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Mit dessen Hilfe de Link Utilities wird die Bootloader-Firmware (generic_boot20_
+pc13.bin) auf den Mikrocontroller 
+\begin_inset Quotes gld
+\end_inset
+
+geflasht
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Addsec*
+\begin_inset Newpage newpage
+\end_inset
+
+Anhang: Erweiterungen, Shields & Module
+\end_layout
+
+\begin_layout Standard
+Für fast jede Anwendung und jedes Problem gibt es bereits Lösungen in Form
+ von Erweiterungen (sogenannte 
+\begin_inset Quotes gld
+\end_inset
+
+Shields
+\begin_inset Quotes grd
+\end_inset
+
+) die man einsetzen kann.
+ Diese können meist an Stelle eigener Entwicklungen eingesetzt werden.
+ Dies reicht von Sensoren für Temperatur, Druck odeer Gas bis hin zu Displays
+ und RFID-Lesegeräten.
+ Zusätzlich zu einer entsprechenden aufsteckbaren bzw.
+ verkabelbaren Platine werden Bibliotheken angeboten, welche die Programmierung
+ vereinfachen.
+ Die 
+\begin_inset Quotes gld
+\end_inset
+
+Shields
+\begin_inset Quotes grd
+\end_inset
+
+ können meist für wenige Euro bei Sprarkfun, Adafruit oder eBay erworben
+ werden.
+ In Dresden ist 
+\begin_inset Quotes gld
+\end_inset
+
+Agile Hardware
+\begin_inset Quotes grd
+\end_inset
+
+ (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://my.agile-hardware.de/
+\end_layout
+
+\end_inset
+
+ ) als Anlaufstelle zu empfehlen.
+ Darüber hinaus haben folgende Module / Shields im Elektronikbereich des
+ Konglomerats zum testen.
+ Bei Interesse können diese z.B.
+ während der 
+\begin_inset Quotes gld
+\end_inset
+
+Offenen Elektronikwerkstatt
+\begin_inset Quotes grd
+\end_inset
+
+ getestet werden.
+ Bitte gegenenfalls anfragen.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Digitaler Temperatur-Sensor DS18B20
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Digitaler Erschütterungssensor
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Magnetfeldsensor (Hall)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Einfacher digitaler Taster
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Joystick
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Infrarot Sender (IRLed)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Infrarot Empfänger (IRLed)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Flamendetektor
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Aktiver Lautsprecher
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Laser Diode (650nm)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+RGB-Leds
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Gabellichtschranke
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Zweifarb-LED
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Einton-Lautsprecher (Passiv)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Analoger Temperatur-Sensor
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Digitaler Feuchtigkeitssensor DHT11
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Digitaler Neigungssensor (Quecksilber) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Fotowiderstand (Helligkeitssensor)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Relay-Modul
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Reed Kontakt (Magnetischer Schalter)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Hinderniserkennung
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Linienfolger
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Regenbogen-LED
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Mikrofon-Module
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Drehgeber (Endlos Drehschalter)
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Schrittmotor mit Treiber
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Servor-Motor
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+8x8 LED-Anzeige
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+TFT Bildschirm 128x160 1,8''
+\end_layout
+
+\begin_layout Addsec*
+\begin_inset Newpage newpage
+\end_inset
+
+Anhang: Links & Projekte
+\end_layout
+
+\begin_layout Standard
+In diesem Kapitel werden Projekte und Seiten vorgestellt, die beim Erlernen
+ und als Ideengeber sinnvoll sind.
+\end_layout
+
+\begin_layout Subsection*
+Links zum Arduino
+\end_layout
+
+\begin_layout Subsection*
+Links zur Programmierung von Arduinos
+\end_layout
+
+\begin_layout Subsection*
+Links zu besonderen Projekten mit Arduinos
+\end_layout
+
+\end_body
+\end_document
